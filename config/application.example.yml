@@ -1,0 +1,14 @@
+ ADAPTER : your_adapter
+ DB_NAME : your_db_name
+ DB_USERNAME : your_username
+ DB_PASSWORD:  your_password
+ DB_HOST : your_host
+ DB_PORT : your_port
+EMAIL: your_email
+PASSWORD: your_password_email_application
+MACHINE_HOST: http://127.0.0.1:3000
+MACHINE_PORT: 3000
+DELIVERY_METHOD: smtp
+SMTP_ADDRESS: smtp.gmail.com
+SMTP_PORT: 465
+SMTP_AUTHENTICATION: plain
