@@ -1,7 +1,6 @@
 class CreateUsers < ActiveRecord::Migration[7.1]
   def change
     create_table :users do |t|
-      t.integer :user_id
       t.string :email, limit: 50
       t.string :first_name, limit: 20
       t.string :last_name, limit: 20
@@ -12,6 +11,6 @@ class CreateUsers < ActiveRecord::Migration[7.1]
 
       t.timestamps
     end
-    add_index :users, :user_id
+    add_index :users, :id
   end
 end

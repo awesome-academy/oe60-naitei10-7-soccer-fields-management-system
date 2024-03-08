@@ -1,7 +1,6 @@
 class CreateBookings < ActiveRecord::Migration[7.1]
   def change
     create_table :bookings do |t|
-      t.integer :booking_id
       t.datetime :start_time
       t.datetime :end_time
       t.integer :status
@@ -10,6 +9,6 @@ class CreateBookings < ActiveRecord::Migration[7.1]
 
       t.timestamps
     end
-    add_index :bookings, :booking_id
+    add_index :bookings, :id
   end
 end
