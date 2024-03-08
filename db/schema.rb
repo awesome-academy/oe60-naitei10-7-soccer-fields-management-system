@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
   create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "booking_id"
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer "status"
@@ -20,25 +19,24 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
     t.bigint "field_type_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["booking_id"], name: "index_bookings_on_booking_id"
     t.index ["field_type_id"], name: "index_bookings_on_field_type_id"
+    t.index ["id"], name: "index_bookings_on_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "parent_comment_id"
     t.text "content"
     t.bigint "user_id", null: false
     t.bigint "review_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "parent_comment_id"
     t.index ["parent_comment_id"], name: "index_comments_on_parent_comment_id"
     t.index ["review_id"], name: "index_comments_on_review_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "field_types", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "field_type_id"
     t.string "field_type_name", limit: 50
     t.boolean "is_availible"
     t.bigint "field_id", null: false
@@ -46,32 +44,29 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["field_id"], name: "index_field_types_on_field_id"
-    t.index ["field_type_id"], name: "index_field_types_on_field_type_id"
+    t.index ["id"], name: "index_field_types_on_id"
     t.index ["price_id"], name: "index_field_types_on_price_id"
   end
 
   create_table "fields", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "field_id"
     t.string "name", limit: 50
     t.text "description"
     t.string "phone_number", limit: 15
     t.string "address", limit: 50
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["field_id"], name: "index_fields_on_field_id"
+    t.index ["id"], name: "index_fields_on_id"
   end
 
   create_table "prices", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "price_id"
     t.string "name", limit: 50
     t.string "price", limit: 20
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["price_id"], name: "index_prices_on_price_id"
+    t.index ["id"], name: "index_prices_on_id"
   end
 
   create_table "reviews", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "review_id"
     t.integer "rating"
     t.text "content"
     t.bigint "user_id", null: false
@@ -79,11 +74,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["field_id"], name: "index_reviews_on_field_id"
+    t.index ["id"], name: "index_reviews_on_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "user_id"
     t.string "email", limit: 50
     t.string "first_name", limit: 20
     t.string "last_name", limit: 20
@@ -93,7 +88,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
     t.integer "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_users_on_user_id"
+    t.index ["id"], name: "index_users_on_id"
   end
 
   add_foreign_key "bookings", "field_types"
