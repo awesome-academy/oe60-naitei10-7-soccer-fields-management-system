@@ -36,3 +36,13 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "sassc", "~> 2.4"
+
+gem "bcrypt", "~> 3.1.7"
+
+gem "config"
+
+gem "bootstrap-sass", "3.4.1"
+
+gem "sassc-rails"
