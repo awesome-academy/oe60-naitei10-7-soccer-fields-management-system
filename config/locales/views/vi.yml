@@ -1,0 +1,6 @@
+vi:
+  sessions:
+    sign_in_title: "Đăng nhập"
+  registrations:
+    sign_up_title: "Đăng ký"
+    remember_me: "Lưu thông tin đăng nhập"

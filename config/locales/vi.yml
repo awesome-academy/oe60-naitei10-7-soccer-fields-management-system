@@ -1,0 +1,8 @@
+vi:
+  application:
+    language:
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+
+    server:
+      error_message: "Máy chủ đang bận, vui lòng thao tác sau ít phút nữa"
