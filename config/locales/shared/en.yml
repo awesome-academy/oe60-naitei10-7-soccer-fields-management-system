@@ -17,8 +17,18 @@ en:
   model:
     user:
       not_found: "User not found"
+      update_success: "Update success"
       edit_error: "You can not edit this account"
 
   controller:
     user:
       not_login: "User is not login"
+  email:
+    activation:
+      email_instructions: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      password_expired: "Password reset has expired"
+      activation_failed: "Activation failed"
+      password_update_success: "Password update success"
+      user_actived: "User is in actived!"
+      password_reset_error: "reset error"

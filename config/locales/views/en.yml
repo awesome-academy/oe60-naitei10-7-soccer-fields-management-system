@@ -8,7 +8,8 @@ en:
 
   header:
     home: "Home"
-    settings: "Settings"
+    account: "Account"
+    log_in: "Sign in"
 
   home:
     title: "Setting foot on the football field"
@@ -19,6 +20,13 @@ en:
 
   footer:
     title: "All rights reserved | This template is made with by Tien + Manh"
-
   users:
     update_title: "Update"
+  password_resets:
+    edit:
+      reset_password: "Reset password"
+      confirmation: "Confirmation"
+      update_password: "Update password"
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"

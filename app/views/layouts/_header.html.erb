@@ -11,9 +11,19 @@
             <li class="active">
               <%= link_to t("header.home"), root_path, class: "nav-link" %>
             </li>
-            <li>
-              <%= link_to t("header.settings") , edit_user_path(current_user)%>
-            </li>
+            <% if logged_in? %>
+              <li class="dropdown">
+                <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+                  <%= t "header.account" %>
+                  <b class="caret"></b>
+                <% end %>
+                <ul class="dropdown-menu">
+                  <%= link_to "Settings", edit_user_path(current_user) if logged_in? %>
+                </ul>
+              </li>
+            <% else %>
+              <li><%= link_to t("header.log_in"), signin_path %></li>
+            <% end %>
           </ul>
         </nav>
       </div>

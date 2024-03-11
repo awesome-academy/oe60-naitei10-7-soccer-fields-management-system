@@ -8,7 +8,8 @@ vi:
 
   header:
     home: "Trang chủ"
-    settings: "Cài đặt"
+    account: "Tài khoản"
+    log_in: "Đăng nhập"
 
   home:
     title: "Đặt chân ra sân bóng đá"
@@ -19,6 +20,13 @@ vi:
 
   footer:
     title: "Mọi quyền được bảo lưu | Mẫu này được thực hiện bởi Tien + Mạnh"
-
   users:
     update_title: "Cập nhật"
+  password_resets:
+    edit:
+      reset_password: "Đặt lại mật khẩu"
+      confirmation: "Xác nhận"
+      update_password: "Thay đổi mật khẩu"
+    new:
+      forgot_password: "Quên mật khẩu ?"
+      submit: "Xác nhận"

@@ -10,7 +10,7 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates_confirmation_of :password_digest
   validate :password_requirements_are_met
-  attr_accessor :activation_token
+  attr_accessor :activation_token, :reset_token
 
   before_create :create_activation_digest
 
@@ -31,7 +31,20 @@ class User < ApplicationRecord
     return false unless digest_num.present?
 
     bcrypt_password = BCrypt::Password.new digest_num
-    bcrypt_password === token
+    bcrypt_password == token
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < 1.hours.ago
   end
 
   private

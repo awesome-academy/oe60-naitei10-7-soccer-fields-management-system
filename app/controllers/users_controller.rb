@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+# frozen_string_literal: true
+
+>>>>>>> Stashed changes
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new show)
   before_action :load_user, except: %i(index new)
@@ -44,6 +49,10 @@ class UsersController < ApplicationController
   end
 
   def user_params
+<<<<<<< Updated upstream
     params.permit :first_name, :last_name,:phone_number, :password, :password_confirmation
+=======
+    params.permit :first_name, :last_name, :phone_number, :password, :password_confirmation
+>>>>>>> Stashed changes
   end
 end

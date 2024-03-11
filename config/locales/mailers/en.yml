@@ -9,6 +9,13 @@ en:
       welcome_text: "Hello"
       content: "Thanks for signing up! To activate your account, please click the link below"
       remind: "If you didn't sign up for our service, you can ignore this email"
+      password_reset: "Password Reset"
 
     invalid_link: "Invalid activation link"
 
+    password_reset:
+      title: "Quên mật khẩu"
+      instruct: "Để đặt lại mật khẩu vui lòng nhấn vào link: "
+      instruct2: "Link này chỉ tồn tại trong 1 giờ"
+      instruct3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên."
+      reset_password: "Đặt lại mật khẩu"

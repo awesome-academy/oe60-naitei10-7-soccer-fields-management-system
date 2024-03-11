@@ -17,8 +17,17 @@ vi:
   model:
     user:
       not_found: "Không tìm thấy người dùng"
+      update_success: "Cập nhật thành công"
       edit_error: "Bạn không thể chỉnh sửa tài khoản này"
-
   controller:
     user:
       not_login: "Người dùng chưa đăng nhập"
+  email:
+    activation:
+      email_instructions: "Email được gửi kèm hướng dẫn đặt lại mật khẩu"
+      email_not_found: "Không tìm thấy địa chỉ email"
+      password_expired: "Việc đặt lại mật khẩu đã hết hạn"
+      activation_failed: "Kích hoạt thất bại"
+      password_update_success: "Cập nhật mật khẩu thành công !"
+      user_actived: "Người dùng đã được kích hoạt!"
+      password_reset_error: "Lỗi đặt lại mật khẩu"

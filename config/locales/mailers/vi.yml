@@ -9,5 +9,13 @@ vi:
       welcome_text: "Xin chào"
       content: "Cảm ơn bạn đã đăng kí, vui lòng kích hoạt đường dẫn bên dưới để kích hoạt !"
       remind: "Nếu bạn không đăng kí, vui lòng bỏ qua thư này"
+      password_reset: "Đặt lại mật khẩu"
 
     invalid_link: "Đường dẫn bị hỏng gòi, OPPS"
+
+    password_reset:
+      title: "Quên mật khẩu"
+      instruct: "Để đặt lại mật khẩu vui lòng nhấn vào link: "
+      instruct2: "Link này chỉ tồn tại trong 1 giờ"
+      instruct3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên."
+      reset_password: "Đặt lại mật khẩu"
