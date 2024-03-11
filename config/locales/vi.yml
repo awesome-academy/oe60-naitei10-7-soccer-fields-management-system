@@ -9,3 +9,6 @@ vi:
 
     auth:
       missing_login_message: "Trước tiên bạn cần phải đăng nhập !"
+      
+  admin:
+    introduce: "Đây là trang admin"
