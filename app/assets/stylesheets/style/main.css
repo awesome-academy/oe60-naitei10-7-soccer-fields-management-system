@@ -54,3 +54,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.page-item.active .page-link {
+  background: #ee1e46 !important;
+  border: none !important;
+  outline: none !important;
+}

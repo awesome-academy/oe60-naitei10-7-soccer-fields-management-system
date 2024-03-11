@@ -5,8 +5,13 @@
         <h2 class="heading"><%= t("fields.title") %></h2>
       </div>
     </div>
-    <div class="row no-gutters">
-      <%= render "fields/fields_list" %>
+    <div>
+      <div class="d-flex justify-content-end"><%== pagy_bootstrap_nav @pagy %></div>
+      <div class="row no-gutters">
+        <% @fields.each do |field| %>
+          <%= render field %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

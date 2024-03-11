@@ -32,6 +32,7 @@ gem "sassc-rails"
 
 gem "jquery-rails"
 
+gem "pagy"
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "byebug"
