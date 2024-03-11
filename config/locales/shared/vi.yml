@@ -12,7 +12,13 @@ vi:
   button:
     register: "Đăng ký"
     login: "Đăng nhập"
+    confirm: "Xác nhận"
 
   model:
     user:
       not_found: "Không tìm thấy người dùng"
+      edit_error: "Bạn không thể chỉnh sửa tài khoản này"
+
+  controller:
+    user:
+      not_login: "Người dùng chưa đăng nhập"

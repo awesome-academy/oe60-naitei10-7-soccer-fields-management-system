@@ -16,4 +16,7 @@ Rails.application.routes.draw do
 
   # Active account registration
   get "activate/:activation_digest", to: "accounts#activations", as: "activate_user", constraints: { activation_digest: /.*/ }
+
+  resources :users
+
 end

@@ -2,3 +2,7 @@ vi:
   sessions:
     create:
       error_login_message: "Tên người dùng hoặc mật khẩu không chính xác"
+
+  model:
+    user:
+      update_success: "Cập nhật thành công"
