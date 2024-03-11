@@ -1,0 +1,26 @@
+<section class="sign-in">
+  <div class="container">
+    <div class="signin-content">
+      <div class="signin-image text-center">
+        <img class="rounded mb-3" src="<%= asset_path("sign-in.jpg") %>" alt="Example Image">
+        <%= link_to t("button.register"), signup_path, class: "text-center" %>
+      </div>
+      <div class="signin-form">
+        <h2 class="form-title"><%= t("sessions.sign_in_title") %></h2>
+        <form method="POST" class="register-form" id="login-form">
+          <div class="form-group">
+            <label for="email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+            <input type="text" name="email" id="email" placeholder="<%= t "form.placeholder.email" %>"/>
+          </div>
+          <div class="form-group">
+            <label for="password"><i class="zmdi zmdi-lock"></i></label>
+            <input type="password" name="password" id="password" placeholder="<%= t "form.placeholder.password_digest" %>"/>
+          </div>
+          <div class="form-group form-button">
+            <%= button_to t("button.login"), signin_path, class: "btn btn-success" %>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

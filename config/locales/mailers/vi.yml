@@ -4,6 +4,7 @@ vi:
       subject: "Vui lòng kiểm tra email để kích hoạt tài khoản"
       active_now: "Kích hoạt ngay"
       activated: "Tài khoản đã kích hoạt"
+      deactivated: "Tài khoản chưa kích hoạt"
       title: "Kích hoạt tài khoản của bạn"
       welcome_text: "Xin chào"
       content: "Cảm ơn bạn đã đăng kí, vui lòng kích hoạt đường dẫn bên dưới để kích hoạt !"

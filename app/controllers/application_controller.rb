@@ -2,6 +2,8 @@
 
 class ApplicationController < ActionController::Base
   include ErrorHandlingHelper
+  include SessionsHelper
+
   before_action :set_locale
 
   def switch_language
