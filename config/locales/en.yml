@@ -1,0 +1,8 @@
+en:
+  application:
+    language:
+      en: "English"
+      vi: "Vietnamese"
+
+    server:
+      error_message: "Server is busy, let relax and comeback to action"

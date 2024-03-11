@@ -1,0 +1,4 @@
+en:
+  errors:
+    messages:
+      invalid_password: "Invalid password. Password must be at least 8 characters long and contain at least 3 types of characters: lowercase letters, uppercase letters, numbers and special characters."

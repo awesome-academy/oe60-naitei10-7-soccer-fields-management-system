@@ -1,0 +1,18 @@
+en:
+  form:
+    errors: "The form contains %{count} errors."
+    placeholder:
+      email: "Enter your email"
+      first_name: "Enter your first name"
+      last_name: "Enter your last name"
+      phone_number: "Enter your phone number"
+      password_digest: "Enter your password"
+      password_confirmation: "Enter your password confirmation"
+
+  button:
+    register: "Register"
+    login: "Login"
+
+  model:
+    user:
+      not_found: "User not found"

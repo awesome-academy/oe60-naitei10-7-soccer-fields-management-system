@@ -1,0 +1,6 @@
+en:
+  sessions:
+    sign_in_title: "Sign in"
+  registrations:
+    sign_up_title: "Sign up"
+    remember_me: "Remember me"

@@ -1,0 +1,18 @@
+vi:
+  form:
+    errors: "Biểu mẫu chứa %{count} lỗi."
+    placeholder:
+      email: "Nhập email của bạn"
+      first_name: "Nhập tên của bạn"
+      last_name: "Nhập họ của bạn"
+      phone_number: "Nhập điện thoại của bạn"
+      password_digest: "Nhập mật khẩu của bạn"
+      password_confirmation: "Nhập xác nhận mật khẩu của bạn"
+
+  button:
+    register: "Đăng ký"
+    login: "Đăng nhập"
+
+  model:
+    user:
+      not_found: "Không tìm thấy người dùng"

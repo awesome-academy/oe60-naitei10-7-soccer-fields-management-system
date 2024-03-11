@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "can't be blank"
+            first_name:
+              blank: "can't be blank"
+            last_name:
+              blank: "can't be blank"
+            phone_number:
+              blank: "can't be blank"
+            password_digest:
+              blank: "can't be blank"
+            password_confirmation:
+              confirmation: "doesn't match the password"

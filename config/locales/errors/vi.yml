@@ -1,0 +1,4 @@
+vi:
+  errors:
+    messages:
+      invalid_password: "Mật khẩu không hợp lệ. Mật khẩu phải có độ dài tối thiểu 8 ký tự và chứa ít nhất 3 loại ký tự: chữ thường, chữ hoa, số và ký tự đặc biệt."

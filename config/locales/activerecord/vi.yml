@@ -1,0 +1,18 @@
+vi:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "không thể để trống"
+            first_name:
+              blank: "không thể để trống"
+            last_name:
+              blank: "không thể để trống"
+            phone_number:
+              blank: "không thể để trống"
+            password:
+              blank: "không thể để trống"
+            password_confirmation:
+              confirmation: "không khớp với mật khẩu"
