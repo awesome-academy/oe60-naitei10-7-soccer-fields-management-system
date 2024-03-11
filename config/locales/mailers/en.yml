@@ -4,6 +4,7 @@ en:
       subject: "Check your email to active the account, please !"
       active_now: "Active now"
       activated: "Account activated"
+      deactivated: "Account deactivated"
       title: "Activate Your Account"
       welcome_text: "Hello"
       content: "Thanks for signing up! To activate your account, please click the link below"

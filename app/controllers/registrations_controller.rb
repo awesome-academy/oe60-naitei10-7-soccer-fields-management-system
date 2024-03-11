@@ -4,7 +4,7 @@ class RegistrationsController < ApplicationController
   def new
     @user = User.new
   end
-  
+
   def create
     @user = User.create user_params
     if @user.save
@@ -15,10 +15,10 @@ class RegistrationsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-  
+
   private
-    
-    def user_params
-      params.permit(:email, :first_name, :last_name, :phone_number, :password, :password_confirmation)
-    end
+
+  def user_params
+    params.permit(:email, :first_name, :last_name, :phone_number, :password, :password_confirmation)
+  end
 end
