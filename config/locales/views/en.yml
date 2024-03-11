@@ -4,3 +4,15 @@ en:
   registrations:
     sign_up_title: "Sign up"
     remember_me: "Remember me"
+  header:
+    home: "Home"
+
+  home:
+    title: "Setting foot on the football field"
+    description: "Book soccer fields quickly and easily with the soccer field booking app. There are plenty of amenities and activities to offer as you can choose from a range of high quality football pitches in your area."
+
+  fields:
+    title: "Soccer fields list"
+
+  footer:
+    title: "All rights reserved | This template is made with by Tien + Manh"

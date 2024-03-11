@@ -1,0 +1,25 @@
+  
+<div class="site-wrap">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  <%= render "layouts/header" %>
+  <div class="hero overlay">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 ml-auto">
+          <h1 class="text-white"><%= t("home.title") %></h1>
+          <p><%= t("home.description") %>.</p>
+          <div id="date-countdown"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render "fields/index" %>
+  <%= render "layouts/footer" %>
+</div>
