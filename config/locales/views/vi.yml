@@ -4,3 +4,15 @@ vi:
   registrations:
     sign_up_title: "Đăng ký"
     remember_me: "Lưu thông tin đăng nhập"
+  header:
+    home: "Trang chủ"
+
+  home:
+    title: "Đặt chân ra sân bóng đá"
+    description: "Đặt sân bóng nhanh chóng và dễ dàng với ứng dụng đặt sân bóng đá. Tận hưởng sự tiện ích và linh hoạt khi bạn có thể chọn từ một loạt các sân bóng đá chất lượng cao trong khu vực của bạn."
+
+  fields:
+    title: "Danh sách sân bóng đá"
+
+  footer:
+    title: "Mọi quyền được bảo lưu | Mẫu này được thực hiện bởi Tien + Mạnh"

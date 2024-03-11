@@ -1,0 +1,21 @@
+<header class="site-navbar py-4" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="site-logo">
+        <img src="<%= asset_path("logo.png") %>" alt="Logo">
+      </div>
+      <div class="ml-auto">
+        <%= render "layouts/language" %>
+        <nav class="site-navigation position-relative text-right" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li class="active">
+              <%= link_to t("header.home"), root_path, class: "nav-link" %>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
