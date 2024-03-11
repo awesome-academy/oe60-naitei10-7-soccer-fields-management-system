@@ -15,7 +15,13 @@ vi:
     booking: "Đặt sân"
     availible_field: "Còn sân"
     inavailible_field: "Hết sân"
+    confirm: "Xác nhận"
 
   model:
     user:
       not_found: "Không tìm thấy người dùng"
+      edit_error: "Bạn không thể chỉnh sửa tài khoản này"
+
+  controller:
+    user:
+      not_login: "Người dùng chưa đăng nhập"

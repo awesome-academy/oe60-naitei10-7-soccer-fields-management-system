@@ -1,11 +1,14 @@
 en:
   sessions:
     sign_in_title: "Sign in"
+
   registrations:
     sign_up_title: "Sign up"
     remember_me: "Remember me"
+
   header:
     home: "Home"
+    settings: "Settings"
 
   home:
     title: "Setting foot on the football field"
@@ -20,3 +23,6 @@ en:
 
   footer:
     title: "All rights reserved | This template is made with by Tien + Manh"
+
+  users:
+    update_title: "Update"

@@ -1,0 +1,4 @@
+vi:
+  application:
+    user:
+      not_login: "Người dùng cần đăng nhập"
