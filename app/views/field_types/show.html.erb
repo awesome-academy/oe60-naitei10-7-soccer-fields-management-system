@@ -1,0 +1,21 @@
+<div class="site-section bg-dark row">
+  <div class="col-3"><h1>dsad</h1></div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 p-0 rounded">
+        <div class="widget-next-match rounded">
+          <div class="widget-title">
+            <h3><%= t("fields_type.booking_time") %></h3>
+          </div>
+          <div>
+            <% booking_hours.each do |time| %>
+              <div class="btn btn-white col-2 m-2">
+                <%= time[:start_time] %> - <%= time[:end_time] %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

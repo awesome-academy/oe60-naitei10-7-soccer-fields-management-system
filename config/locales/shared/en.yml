@@ -12,6 +12,9 @@ en:
   button:
     register: "Register"
     login: "Login"
+    booking: "Booking"
+    availible_field: "Availible "
+    inavailible_field: "Inavailible "
 
   model:
     user:

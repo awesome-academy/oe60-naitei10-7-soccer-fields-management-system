@@ -5,19 +5,6 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-4 mb-4">
-      <div class="custom-media d-block">
-        <div class="img mb-4">
-          <%= link_to root_path do %>
-            <img src="<%= asset_path("img_1.jpg") %>" alt="Image" class="img-fluid rounded">
-          <% end %>
-        </div>
-        <div class="text">
-          <span class="meta">May 20, 2020</span>
-          <h3 class="mb-4"><a href="#">Romolu to stay at Real Nadrid?</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus deserunt saepe tempora dolorem.</p>
-        </div>
-      </div>
-    </div>
+    <%= render(partial: "field_type", collection: @field.field_types) || t("fields.empty") %>
   </div>
 </div>

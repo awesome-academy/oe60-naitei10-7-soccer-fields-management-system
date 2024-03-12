@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 class FieldsController < ApplicationController
-  def index
-    @field = Field.new
+  def show
+    @field = Field.find params[:id]
   end
-
-  def show; end
 end

@@ -13,6 +13,7 @@ vi:
 
   fields:
     title: "Danh sách sân bóng đá"
+    empty: "Không có loại trường nào được hiển thị"
 
   fields_detail:
     title: "Chi tiết sân bóng"

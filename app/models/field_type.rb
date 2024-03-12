@@ -2,5 +2,6 @@
 
 class FieldType < ApplicationRecord
   belongs_to :field
-  belongs_to :price
+  has_many :bookings
+  has_many :prices
 end

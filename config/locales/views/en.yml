@@ -13,6 +13,7 @@ en:
 
   fields:
     title: "Soccer fields list"
+    empty: "There's no field type to be displayed"
 
   fields_detail:
     title: "Fields detail"
