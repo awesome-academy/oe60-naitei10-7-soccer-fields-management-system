@@ -12,6 +12,9 @@ vi:
   button:
     register: "Đăng ký"
     login: "Đăng nhập"
+    booking: "Đặt sân"
+    availible_field: "Còn sân"
+    inavailible_field: "Hết sân"
 
   model:
     user:

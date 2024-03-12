@@ -36,3 +36,7 @@ Layout/IndentationWidth:
 
 Style/CaseEquality:
   Enabled: false
+
+Layout/TrailingWhitespace:
+  Enabled: false
+

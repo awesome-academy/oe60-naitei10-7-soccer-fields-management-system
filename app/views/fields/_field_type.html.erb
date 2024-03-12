@@ -1,0 +1,15 @@
+<div class="col-lg-4 mb-4">
+  <div class="custom-media d-block">
+    <div class="img mb-4">
+      <%= link_to root_path do %>
+        <img src="<%= asset_path("img_1.jpg") %>" alt="Image" class="img-fluid rounded">
+      <% end %>
+    </div>
+    <div class="text">
+      <div class="<%= "my-3 px-2 py-1 badge badge-#{field_type.is_availible ? "success" : "danger"}" %>"><%= field_type.is_availible ? t("button.availible_field") : t("button.inavailible_field") %></div>
+      <h5 class=""><%= "#{map_with_time_of_day(field_type.prices).price} $" %></h5>
+      <h3 class="mb-4"><%= field_type.field_type_name %></h3>
+      <%= link_to t("button.booking"), root_path, class: "btn btn-danger" %>
+    </div>
+  </div>
+</div>

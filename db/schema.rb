@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_11_150854) do
   create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.datetime "start_time"
     t.datetime "end_time"
@@ -40,12 +40,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
     t.string "field_type_name", limit: 50
     t.boolean "is_availible"
     t.bigint "field_id", null: false
-    t.bigint "price_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["field_id"], name: "index_field_types_on_field_id"
     t.index ["id"], name: "index_field_types_on_id"
-    t.index ["price_id"], name: "index_field_types_on_price_id"
   end
 
   create_table "fields", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -100,7 +98,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_08_060106) do
   add_foreign_key "comments", "reviews"
   add_foreign_key "comments", "users"
   add_foreign_key "field_types", "fields"
-  add_foreign_key "field_types", "prices"
   add_foreign_key "reviews", "fields"
   add_foreign_key "reviews", "users"
 end

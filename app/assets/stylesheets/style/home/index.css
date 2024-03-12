@@ -1399,14 +1399,14 @@ h1, h2, h3, h4, h5,
     color: #ee1e46;
 }
 
-.custom-pagination a, .custom-pagination span {
+.custom-pagination a, .custom-pagination .page-item {
     display: inline-block;
     color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100% !important;
     background: rgba(255, 255, 255, 0.1);
-    line-height: 40px;
+    margin-right: 5px;
 }
 
 .custom-pagination a:hover {
