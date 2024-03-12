@@ -14,5 +14,8 @@ en:
   fields:
     title: "Soccer fields list"
 
+  fields_detail:
+    title: "Fields detail"
+
   footer:
     title: "All rights reserved | This template is made with by Tien + Manh"
