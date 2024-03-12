@@ -1,11 +1,13 @@
-<div class="site-section bg-dark row">
-  <div class="col-3"><h1>dsad</h1></div>
-  <div class="container">
+<div class="site-section bg-dark row px-2">
+  <div class="col-4">
+    <%= render(partial: "fields/field_type", locals: { field_type: @field_type }) %>
+  </div>
+  <div class="col-8">
     <div class="row mb-5">
       <div class="col-lg-12 p-0 rounded">
         <div class="widget-next-match rounded">
           <div class="widget-title">
-            <h3><%= t("fields_type.booking_time") %></h3>
+            <h3><%= t("field_types.booking_time") %></h3>
           </div>
           <div>
             <% booking_hours.each do |time| %>

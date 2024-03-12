@@ -15,6 +15,10 @@ vi:
     title: "Danh sách sân bóng đá"
     empty: "Không có loại trường nào được hiển thị"
 
+  field_types:
+    booking_time: "Thời gian đặt sân"
+    not_found: "Không tìm thấy sân"
+
   fields_detail:
     title: "Chi tiết sân bóng"
 
