@@ -2,3 +2,7 @@ en:
   sessions:
     create:
       error_login_message: "Invalid username or password"
+
+  model:
+    user:
+      update_success: "Update success"

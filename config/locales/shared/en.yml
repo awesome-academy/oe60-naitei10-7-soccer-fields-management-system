@@ -15,7 +15,13 @@ en:
     booking: "Booking"
     availible_field: "Availible "
     inavailible_field: "Inavailible "
+    confirm: "Confirm"
 
   model:
     user:
       not_found: "User not found"
+      edit_error: "You can not edit this account"
+
+  controller:
+    user:
+      not_login: "User is not login"

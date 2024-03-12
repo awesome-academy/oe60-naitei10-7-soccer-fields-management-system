@@ -1,0 +1,4 @@
+en:
+  application:
+    user:
+      not_login: "User need require login"

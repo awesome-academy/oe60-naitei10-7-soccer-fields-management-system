@@ -1,0 +1,35 @@
+<%= form_for @user do |form| %>
+  <div class="main">
+    <section class="signup col-6 m-auto">
+      <%= render partial: "shared/errors_valid", locals: { object: @user } %>
+      <div class="signup-content">
+        <div class="signup-form">
+          <h2 class="form-title text-black"><%= t("users.update_title") %></h2>
+          <div class="form-group">
+            <label for="first_name"><i class="zmdi zmdi-n-1-square material-icons-messgae"></i></label>
+            <input type="text" name="first_name" id="first_name" placeholder="<%= t("form.placeholder.first_name") %>"/>
+          </div>
+          <div class="form-group">
+            <label for="last_name"><i class="zmdi zmdi-3d-rotation material-icons-messgae"></i></label>
+            <input type="text" name="last_name" id="last_name" placeholder="<%= t("form.placeholder.last_name") %>"/>
+          </div>
+          <div class="form-group">
+            <label for="phone_number"><i class="zmdi zmdi-phone material-icons-messgae"></i></label>
+            <input type="text" name="phone_number" id="phone_number" placeholder="<%= t("form.placeholder.phone_number") %>"/>
+          </div>
+          <div class="form-group">
+            <label for="password"><i class="zmdi zmdi-lock"></i></label>
+            <input type="password" name="password" id="password" placeholder="<%= t("form.placeholder.password_digest") %>"/>
+          </div>
+          <div class="form-group">
+            <label for="password_confirmation"><i class="zmdi zmdi-lock-outline"></i></label>
+            <input type="password" name="password_confirmation" id="password_confirmation" placeholder="<%= t("form.placeholder.password_confirmation") %>"/>
+          </div>
+          <div class="form-group form-button">
+            <input type="submit" name="signup" id="signup" class="form-submit float-right" value="<%= locals[:submit_button_label] %>"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<% end %>

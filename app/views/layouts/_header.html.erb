@@ -12,6 +12,9 @@
               <%= link_to t("header.home"), root_path, class: "nav-link" %>
             </li>
             <li>
+              <% if logged_in? %>
+                <%= link_to t("header.settings"), edit_user_path(current_user) %>
+              <% end %>
             </li>
           </ul>
         </nav>
