@@ -1,0 +1,12 @@
+workspace: true
+
+stages:
+- rubocop
+
+jobs:
+  - name: test:rubocop
+    stage: rubocop
+    image: cimg/ruby:3.2.3
+    script:
+    - gem install rubocop
+    - rubocop
