@@ -20,7 +20,12 @@ vi:
 
   field_types:
     booking_time: "Thời gian đặt sân"
-    not_found: "Không tìm thấy sân"
+    not_found: "Sân bóng không tìm thấy"
+    available_time_slots: "Các sân có sẵn"
+    inavailable_time_slots: "Sân đã đặt trước"
+    note: "Thể lệ cuộc chơi"
+    booking_field_success: "Đặt sân thành công"
+    field_infomation: "Thông tin sân"
 
   fields_detail:
     title: "Chi tiết sân bóng"

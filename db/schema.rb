@@ -10,15 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_11_150854) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_12_081503) do
   create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.datetime "start_time"
-    t.datetime "end_time"
+    t.string "start_time"
+    t.string "end_time"
     t.integer "status"
     t.bigint "user_id", null: false
     t.bigint "field_type_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "booked_date"
     t.index ["field_type_id"], name: "index_bookings_on_field_type_id"
     t.index ["id"], name: "index_bookings_on_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
@@ -61,6 +62,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_150854) do
     t.string "price", limit: 20
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "field_type_id", null: false
+    t.index ["field_type_id"], name: "index_prices_on_field_types_id"
     t.index ["id"], name: "index_prices_on_id"
   end
 

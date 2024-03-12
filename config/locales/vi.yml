@@ -6,3 +6,6 @@ vi:
 
     server:
       error_message: "Máy chủ đang bận, vui lòng thao tác sau ít phút nữa"
+
+    auth:
+      missing_login_message: "Trước tiên bạn cần phải đăng nhập !"

@@ -19,9 +19,9 @@ Rails.application.routes.draw do
 
   # Field path
   resources :fields, only: %i(show index)
-  
+
   # Field type path
-  resources :field_types, only: %i(show)
+  resources :field_types, only: %i(show create update)
 
   resources :users
 
