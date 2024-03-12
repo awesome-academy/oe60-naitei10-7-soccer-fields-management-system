@@ -18,6 +18,10 @@ en:
     title: "Soccer fields list"
     empty: "There's no field type to be displayed"
 
+  field_types:
+    booking_time: "Booking time"
+    not_found: "Field not found"
+
   fields_detail:
     title: "Fields detail"
 

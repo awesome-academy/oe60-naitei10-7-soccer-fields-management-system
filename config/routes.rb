@@ -18,7 +18,10 @@ Rails.application.routes.draw do
   get "activate/:activation_digest", to: "accounts#activations", as: "activate_user", constraints: { activation_digest: /.*/ }
 
   # Field path
-  resources :fields, only: %i(show)
+  resources :fields, only: %i(show index)
+  
+  # Field type path
+  resources :field_types, only: %i(show)
 
   resources :users
 
