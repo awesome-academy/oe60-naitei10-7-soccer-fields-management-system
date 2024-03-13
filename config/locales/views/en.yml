@@ -35,3 +35,6 @@ en:
 
   users:
     update_title: "Update"
+  admin:
+    introduce: "This is the admin page"
+    dashboard: "Dashboard"

@@ -33,6 +33,7 @@ class FieldTypesController < ApplicationController
     @field_type = FieldType.find_by(id: params[:id])
     return if @field_type
 
+    flash[:danger] = t("field_types.not_found")
     redirect_to root_path
     flash[:danger] = t("field_types.not_found")
   end

@@ -52,3 +52,5 @@ gem "sassc", "~> 2.4"
 gem "bcrypt", "~> 3.1.7"
 
 gem "config"
+
+gem "bootstrap-icons-helper"

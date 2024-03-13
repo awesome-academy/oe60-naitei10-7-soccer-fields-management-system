@@ -1435,41 +1435,6 @@ h1, h2, h3, h4, h5,
     margin-bottom: 15px;
 }
 
-.categories li, .sidelink li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
-    list-style: none;
-}
-
-.categories li:last-child, .sidelink li:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.categories li a, .sidelink li a {
-    font-size: 18px;
-    color: #fff;
-    display: block;
-}
-
-.categories li a:hover, .sidelink li a:hover {
-    color: #ee1e46;
-}
-
-.categories li a span, .sidelink li a span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #ccc;
-}
-
-.categories li.active a, .sidelink li.active a {
-    color: #000;
-    font-style: italic;
-}
 
 .comment-form-wrap {
     clear: both;
