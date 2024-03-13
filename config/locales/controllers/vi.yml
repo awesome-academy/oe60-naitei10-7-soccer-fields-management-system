@@ -4,3 +4,6 @@ vi:
       not_login: "Người dùng cần đăng nhập"
   filed_type:
     overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
+  controller:
+    static_pages:
+      not_found_field: "Không tìm thấy kết quả phù hợp"

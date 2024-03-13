@@ -4,3 +4,6 @@ en:
       not_login: "User need require login"
   filed_type:
     overlap: "The soccer field cannot be booked during this time period, please choose another time."
+  controller:
+    static_pages:
+      not_found_field: "Not found field"
