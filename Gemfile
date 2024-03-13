@@ -54,3 +54,5 @@ gem "bcrypt", "~> 3.1.7"
 gem "config"
 
 gem "bootstrap-icons-helper"
+
+gem "font-awesome-sass"

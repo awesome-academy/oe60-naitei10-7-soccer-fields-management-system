@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-group {
+  width: auto;
+  margin: 0 10px; /* Thay đổi khoảng cách nếu cần */
+}
+
+.custom-pagination {
+    display: flex;
+    align-items: center;
+}
