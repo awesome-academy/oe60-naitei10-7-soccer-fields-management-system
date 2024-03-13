@@ -14,7 +14,7 @@ end
 
 def create_field_type_data
   30.times do |i|
-    field_type = FieldType.create(field_type_name: "San #{i % 2 == 0 ? "5" : "7"}", is_availible: true, field_id: 1)
+    field_type = FieldType.create(field_type_name: "San #{i % 2 == 0 ? "5" : "7"}", is_availible: true, field_id: 2)
     create_price_data(field_type.id)
   end
 end

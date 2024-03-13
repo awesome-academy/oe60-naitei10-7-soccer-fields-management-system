@@ -12,3 +12,11 @@ vi:
       
   admin:
     introduce: "Đây là trang admin"
+
+  field_attribute:
+    name: "Tên sân"
+    price: "Giá"
+    address: "Địa chỉ"
+    field_type: "Kiểu sân"
+    start_time: "Thời gian bắt đầu"
+    end_time: "Thời gian kết thúc"

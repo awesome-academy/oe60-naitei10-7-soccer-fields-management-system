@@ -13,7 +13,15 @@
             </li>
             <li>
               <% if logged_in? %>
-                <%= link_to t("header.settings"), edit_user_path(current_user) %>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <%= t("header.settings") %>
+                  </button>
+                  <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                    <%= link_to t("header.profile"), edit_user_path(current_user) %>
+                    <%= link_to t("header.booking_history"), booking_history_path %>
+                  </div>
+                </div>
               <% end %>
             </li>
           </ul>

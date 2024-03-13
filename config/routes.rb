@@ -23,10 +23,13 @@ Rails.application.routes.draw do
   # Field type path
   resources :field_types, only: %i(show create update)
 
+  # User path
   resources :users
 
   namespace :admin do
     resources :users, only: :index
   end
 
+  # Booking history path
+  resources :bookings, only: :index
 end
