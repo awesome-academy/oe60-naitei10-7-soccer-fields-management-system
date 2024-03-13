@@ -2,3 +2,5 @@ vi:
   application:
     user:
       not_login: "Người dùng cần đăng nhập"
+  filed_type:
+    overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."

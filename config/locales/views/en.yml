@@ -21,6 +21,11 @@ en:
   field_types:
     booking_time: "Booking time"
     not_found: "Field not found"
+    available_time_slots: "Available time slots"
+    inavailable_time_slots: "Inavailable time slots"
+    booking_field_success: "Booking successful"
+    note: "Note"
+    field_infomation: "Field information"
 
   fields_detail:
     title: "Fields detail"

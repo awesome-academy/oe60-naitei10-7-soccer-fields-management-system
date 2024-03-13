@@ -6,3 +6,6 @@ en:
 
     server:
       error_message: "Server is busy, let relax and comeback to action"
+
+    auth:
+      missing_login_message: "First, you need to login !"

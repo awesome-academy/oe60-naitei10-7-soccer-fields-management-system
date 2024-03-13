@@ -40,3 +40,11 @@ Style/CaseEquality:
 Layout/TrailingWhitespace:
   Enabled: false
 
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
