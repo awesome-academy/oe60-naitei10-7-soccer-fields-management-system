@@ -35,6 +35,10 @@ en:
 
   users:
     update_title: "Update"
+    profile: "Profile"
+    information: "Information"
+    email: "Email"
+    phone: "Phone number"
   admin:
     introduce: "This is the admin page"
     dashboard: "Dashboard"
