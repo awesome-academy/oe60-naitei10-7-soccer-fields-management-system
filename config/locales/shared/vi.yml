@@ -16,6 +16,7 @@ vi:
     availible_field: "Còn sân"
     inavailible_field: "Hết sân"
     confirm: "Xác nhận"
+    delete: "Xóa"
 
   model:
     user:

@@ -1,0 +1,11 @@
+<tr>
+  <th scope="row"><%= booking.name %></th>
+  <td><%= booking.address %></td>
+  <td><%= booking.start_time %></td>
+  <td><%= booking.end_time %></td>
+  <td><%= booking.field_type_name %></td>
+  <td><%= "#{map_with_time_of_day(booking.prices).price} #{Settings.CURRENCY}" %></td>
+  <td>
+    <%= button_to t("button.delete"), root_path, class: "btn btn-danger" %>
+  </td>
+</tr>

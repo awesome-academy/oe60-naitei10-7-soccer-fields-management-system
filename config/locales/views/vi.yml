@@ -9,6 +9,8 @@ vi:
   header:
     home: "Trang chủ"
     settings: "Cài đặt"
+    profile: "Hồ sơ"
+    booking_history: "Lịch sử đặt sân"
 
   home:
     title: "Đặt chân ra sân bóng đá"
@@ -26,6 +28,7 @@ vi:
     note: "Thể lệ cuộc chơi"
     booking_field_success: "Đặt sân thành công"
     field_infomation: "Thông tin sân"
+    action: "Hoạt động"
 
   fields_detail:
     title: "Chi tiết sân bóng"

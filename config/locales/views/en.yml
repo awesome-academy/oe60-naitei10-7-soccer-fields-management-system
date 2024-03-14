@@ -9,6 +9,8 @@ en:
   header:
     home: "Home"
     settings: "Settings"
+    profile: "Profile"
+    booking_history: "Booking history"
 
   home:
     title: "Setting foot on the football field"
@@ -26,6 +28,7 @@ en:
     booking_field_success: "Booking successful"
     note: "Note"
     field_infomation: "Field information"
+    action: "Action"
 
   fields_detail:
     title: "Fields detail"
