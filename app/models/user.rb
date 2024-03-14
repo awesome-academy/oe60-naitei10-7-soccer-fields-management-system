@@ -22,6 +22,10 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
+  def send_cancel_booking_success_email
+    UserMailer.cancel_booking_success.deliver_now
+  end
+
   def self.new_token
     SecureRandom.urlsafe_base64
   end

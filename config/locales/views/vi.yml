@@ -43,5 +43,11 @@ vi:
     information: "Thông tin cá nhân"
     email: "Thư điện tử"
     phone: "Số điện thoại"
+
   admin:
+    introduce: "Đây là trang quản trị"
     dashboard: "Bảng điều khiển"
+
+  booking:
+    delete_success: "Lịch đặt sân đã bị xóa"
+    delete_fail: "Đặt sân thành công"

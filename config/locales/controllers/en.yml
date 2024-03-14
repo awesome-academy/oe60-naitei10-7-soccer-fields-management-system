@@ -7,3 +7,7 @@ en:
   controller:
     static_pages:
       not_found_field: "Not found field"
+  booking:
+    confirmed: "Booking is confirmed, you cannot cancel"
+    canceled: "Booking is canceled !"
+    not_your: "This field is not yours, please cancel the correct field"

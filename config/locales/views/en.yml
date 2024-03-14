@@ -43,6 +43,11 @@ en:
     information: "Information"
     email: "Email"
     phone: "Phone number"
+    
   admin:
     introduce: "This is the admin page"
     dashboard: "Dashboard"
+
+  booking:
+    delete_success: "Booking has been deleted"
+    delete_fail: "Booking fail"

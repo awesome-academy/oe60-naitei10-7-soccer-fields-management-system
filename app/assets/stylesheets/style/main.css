@@ -60,3 +60,9 @@ table {
   border: none !important;
   outline: none !important;
 }
+
+.alert-notice {
+  text-align: center;
+  background: #5a8b1e;
+  color: white;
+}

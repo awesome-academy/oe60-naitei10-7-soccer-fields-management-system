@@ -31,5 +31,5 @@ Rails.application.routes.draw do
   end
 
   # Booking history path
-  resources :bookings, only: :index
+  resources :bookings, only: %i(index destroy)
 end
