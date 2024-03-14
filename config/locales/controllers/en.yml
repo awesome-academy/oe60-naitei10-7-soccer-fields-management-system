@@ -2,12 +2,25 @@ en:
   application:
     user:
       not_login: "User need require login"
+
   filed_type:
     overlap: "The soccer field cannot be booked during this time period, please choose another time."
+
   controller:
     static_pages:
       not_found_field: "Not found field"
+
   booking:
     confirmed: "Booking is confirmed, you cannot cancel"
     canceled: "Booking is canceled !"
     not_your: "This field is not yours, please cancel the correct field"
+
+  admin:
+    field:
+      create_success: "Field created successfully"
+      create_fail: "Failed to create field"
+      delete_success: "Field deleted  successfully"
+      delete_fail: "Field deleted fail"
+      field_not_found: "Field not found"
+      invalid: "Invalid admin"
+      can_destroy: "Field have booking, you can't destroy"

@@ -1,9 +1,16 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  enum role: {
+    super_admin: 1,
+    admin: 2,
+    user: 3
+  }, _default: :user
+
   has_many :bookings
   has_many :comments
   has_many :reviews
+  has_many :fields
 
   has_secure_password
 

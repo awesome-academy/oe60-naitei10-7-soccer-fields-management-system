@@ -44,10 +44,22 @@ vi:
     email: "Thư điện tử"
     phone: "Số điện thoại"
 
-  admin:
-    introduce: "Đây là trang quản trị"
-    dashboard: "Bảng điều khiển"
-
   booking:
-    delete_success: "Lịch đặt sân đã bị xóa"
-    delete_fail: "Đặt sân thành công"
+    delete_success: "Đặt sân đã bị xóa"
+    delete_fail: "Xóa đặt sân thất bại"
+
+  admin:
+    introduce: "Đây là trang quản trị viên"
+    dashboard: "Bảng điều khiển"
+    field_manager: "Quản lý sân"
+    title_name: "Tên"
+    title_description: "Mô tả"
+    title_phone_number: "Số điện thoại"
+    title_address: "Địa chỉ"
+    title_actions: "Hành động"
+    delete: "Xóa"
+    add_field: "Thêm sân"
+    close: "Đóng"
+
+    field:
+      create: "Tạo"

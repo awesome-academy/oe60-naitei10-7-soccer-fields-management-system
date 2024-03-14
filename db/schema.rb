@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_13_030854) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_12_081503) do
   create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "start_time"
     t.string "end_time"
@@ -54,7 +54,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_13_030854) do
     t.string "address", limit: 50
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", default: 1, null: false
     t.index ["id"], name: "index_fields_on_id"
+    t.index ["user_id"], name: "index_fields_on_user_id"
   end
 
   create_table "prices", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -101,7 +103,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_13_030854) do
   add_foreign_key "comments", "reviews"
   add_foreign_key "comments", "users"
   add_foreign_key "field_types", "fields"
-  add_foreign_key "prices", "field_types"
   add_foreign_key "reviews", "fields"
   add_foreign_key "reviews", "users"
 end

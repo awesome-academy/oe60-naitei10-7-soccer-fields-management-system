@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    'use strict';
+    "use strict";
 
     function $(selector) {
         return document.querySelector(selector);

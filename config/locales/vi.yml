@@ -10,6 +10,9 @@ vi:
     auth:
       missing_login_message: "Trước tiên bạn cần phải đăng nhập !"
 
+    user:
+      is_not_admin: "Bạn không phải là admin"
+
   admin:
     introduce: "Đây là trang admin"
 
@@ -21,3 +24,6 @@ vi:
     field_type: "Kiểu sân"
     start_time: "Thời gian bắt đầu"
     end_time: "Thời gian kết thúc"
+
+    user:
+      is_not_admin: "Bạn không phải là admin"

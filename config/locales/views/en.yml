@@ -43,11 +43,23 @@ en:
     information: "Information"
     email: "Email"
     phone: "Phone number"
-    
-  admin:
-    introduce: "This is the admin page"
-    dashboard: "Dashboard"
 
   booking:
     delete_success: "Booking has been deleted"
     delete_fail: "Booking fail"
+
+  admin:
+    introduce: "This is the admin page"
+    dashboard: "Dashboard"
+    field_manager: "Field manager"
+    title_name: "Name"
+    title_description: "Description"
+    title_phone_number: "Phone number"
+    title_address: "Address"
+    title_actions: "Actions"
+    delete: "Delete"
+    add_field: "Add Field"
+    close: "Close"
+
+    field:
+      create: "Create"
