@@ -7,15 +7,6 @@ vi:
   filed_type:
     overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
 
-  controller:
-    static_pages:
-      not_found_field: "Không tìm thấy kết quả phù hợp"
-      
-  booking:
-    confirmed: "Đặt sân đã được xác nhận, bạn không thể hủy"
-    canceled: "Đặt sân bị hủy"
-    not_your: "Sân này không phải của bạn, vui lòng hủy đúng sân"
-
   admin:
     field:
       create_success: "Tạo mới sân bóng thành công"
@@ -31,8 +22,12 @@ vi:
       fail: "Thay đổi trạng thái đơn đặt sân thất bại"
 
     cancel:
-        success: "Hủy đơn đặt sân thành công"
-        fail: "Hủy đơn đặt sân thất bại"
+      success: "Hủy đơn đặt sân thành công"
+      fail: "Hủy đơn đặt sân thất bại"
 
     booking:
       not_found: "Không tìm thấy đơn đặt này"
+
+    field_type:
+      create_success: "Tạo mới sân bóng thành công"
+      create_fail: "Tạo mới sân bóng thất bại"
