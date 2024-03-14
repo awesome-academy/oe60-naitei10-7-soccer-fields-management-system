@@ -60,6 +60,9 @@ en:
     close: "Close"
     field:
       create: "Create"
+      morning_price: "Morning Price"
+      afternoon_price: "Afternoon Price"
+      evening_price: "Evening Price"
     static_pages:
       accept: "Accept"
       reject: "Reject"
@@ -71,16 +74,18 @@ en:
       create: "Create"
     add_field: "Add field"
     close: "Close"
-    my_account: "My account"
+    my_account: "My Account"
     log_out: "Log out"
+    title_name_type: "Field Type Name"
+    view_detail: "View detail"
 
     static_pages:
       accept: "Accept"
       reject: "Reject"
-      welcome: "Welcome to the main page"
-      hello: "Hello %{full_name}, welcome back"
+      welcome: "Welcome to Dashboard"
+      hello: "Hello %{full_name}, welcome to your awesome dashboard!"
       settings: "Settings"
-      admin_page: "Home"
+      admin_page: "Admin page"
 
   email:
     booking_accepted:

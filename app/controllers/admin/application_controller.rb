@@ -6,7 +6,7 @@ module Admin
     private
 
     def is_admin
-      return if current_user.admin?
+      return if current_user&.admin?
 
       flash[:danger] = t("application.user.is_not_admin")
       redirect_to root_path
