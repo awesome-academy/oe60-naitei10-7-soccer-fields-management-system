@@ -60,6 +60,16 @@ vi:
     close: "Đóng"
     field:
       create: "Tạo mới"
+
+  booking:
+    delete_success: "Lịch đặt sân đã bị xóa"
+    delete_fail: "Đặt sân thành công"
+    field:
+      create: "Tạo mới"
+    add_field: "Thêm sân bóng"
+    close: "Đóng"
+    field:
+      create: "Tạo mới"
       morning_price: "Giá buổi sáng"
       afternoon_price: "Giá buổi chiều"
       evening_price: "Giá buổi tối"
