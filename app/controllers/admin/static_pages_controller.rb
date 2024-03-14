@@ -2,11 +2,11 @@
 
 module Admin
   class StaticPagesController < ApplicationController
-    before_action :bookings, only: :index
+    before_action :bookings, only: %i(index update cancel)
     before_action :load_booking, only: %i(update cancel)
 
     def index
-      @pagy, @bookings = pagy(@bookings.includes(:user), items: Settings.PERPAGE_8)
+      bookings_get
     end
 
     def show
@@ -14,25 +14,29 @@ module Admin
     end
 
     def update
-      if @booking.update(status: :confirmed)
-        BookingMailer.booking_accepted_email(@booking).deliver_now
-        flash[:success] = t("admin.bookings.success")
-        redirect_to admin_static_pages_path
-      else
-        flash[:danger] = t("admin.bookings.fail")
-        redirect_to root_path
+      respond_to do |format|
+        if @booking.update(status: :confirmed)
+          BookingMailer.booking_accepted_email(@booking).deliver_now
+          format.html { redirect_to root_path, notice: t("admin.bookings.success") }
+        else
+          format.html { redirect_to admin_static_pages_path, notice: t("admin.bookings.fail") }
+        end
+        format.turbo_stream
       end
+      bookings_get
     end
 
     def cancel
-      if @booking.update(status: :canceled)
-        BookingMailer.booking_rejected_email(@booking).deliver_now
-        flash[:success] = t("admin.cancel.success")
-        redirect_to admin_static_pages_path
-      else
-        flash[:danger] = t("admin.cancel.fail")
-        redirect_to root_path
+      respond_to do |format|
+        if @booking.update(status: :canceled)
+          BookingMailer.booking_accepted_email(@booking).deliver_now
+          format.html { redirect_to admin_static_pages_path, notice: t("admin.cancel.success") }
+        else
+          format.html { redirect_to admin_static_pages_path, notice: t("admin.cancel.fail") }
+        end
+        format.turbo_stream
       end
+      bookings_get
     end
 
     private
@@ -47,6 +51,10 @@ module Admin
 
       flash[:danger] = t("admin.booking.not_found")
       redirect_to admin_static_pages_path
+    end
+
+    def bookings_get
+      @pagy, @bookings = pagy(@bookings.includes(:user), items: Settings.PERPAGE_8)
     end
   end
 end

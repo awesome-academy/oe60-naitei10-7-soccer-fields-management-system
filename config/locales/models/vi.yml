@@ -6,3 +6,5 @@ vi:
   model:
     user:
       update_success: "Cập nhật thành công"
+    field:
+      image_invalid: "phải là định dạng hình ảnh hợp lệ"

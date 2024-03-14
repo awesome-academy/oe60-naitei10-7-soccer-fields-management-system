@@ -61,3 +61,6 @@ gem "bootstrap-icons-helper"
 gem "font-awesome-sass"
 
 gem "faker"
+
+gem "image_processing", "1.12.2"
+gem "active_storage_validations", "0.9.8"

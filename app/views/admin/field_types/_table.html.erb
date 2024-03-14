@@ -20,9 +20,14 @@
         <td><%= field_type.field.phone_number %></td>
         <td><%= field_type.field.address %></td>
         <td>
-          <%= button_to t("admin.delete") , admin_field_type_path(field_type), method: :delete, class: "btn btn-danger" %>
+          <%= button_to t("admin.delete"), admin_field_type_path(field_type), method: :delete, class: "btn btn-danger" %>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#updateModal<%= field_type.id %>">
+            <%= t("admin.update") %>
+          </button>
         </td>
       </tr>
+      <!-- Update Modal -->
+      <%= render "update", field_type: field_type%>
     <% end %>
   </tbody>
 </table>
