@@ -7,16 +7,16 @@
     </div>
     <div>
       <div class="row  align-items-center">
-        <div class="input-group">
-          <div class="form-outline" data-mdb-input-init>
-            <input type="search" id="form1" class="form-control" />
+        <%= form_tag(root_path, method: :get) do %>
+          <div class="input-group">
+            <%= text_field_tag :search, params[:search], class: "form-control", placeholder: t("fields.search_placeholder") %>
+            <button type="submit" class="btn btn-primary" data-mdb-ripple-init>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
-          <button type="button" class="btn btn-primary" data-mdb-ripple-init>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+        <% end %>
         <div class="custom-pagination">
-          <%== pagy_bootstrap_nav @pagy %>
+          <%== pagy_bootstrap_nav @pagy if @fields.present?%>
         </div>
       </div>
       <div class="row no-gutters">

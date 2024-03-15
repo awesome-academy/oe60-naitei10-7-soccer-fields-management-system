@@ -2,6 +2,10 @@
 
 class StaticPagesController < ApplicationController
   def home
-    @pagy, @fields = pagy Field.sorted_by_name, items: Settings.PERPAGE_8
+    @fields = Field.search_by_name(params[:search]).sorted_by_name
+    @pagy, @fields = pagy @fields, items: Settings.PERPAGE_8
+    return unless @fields.blank?
+
+    flash.now[:alert] = t("controller.static_pages.not_found_field")
   end
 end
