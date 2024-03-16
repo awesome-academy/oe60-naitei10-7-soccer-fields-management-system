@@ -10,4 +10,7 @@ vi:
       content: "Cảm ơn bạn đã đăng kí, vui lòng kích hoạt đường dẫn bên dưới để kích hoạt !"
       remind: "Nếu bạn không đăng kí, vui lòng bỏ qua thư này"
 
+    cancel_booking:
+      success: "Hủy thành công"
+
     invalid_link: "Đường dẫn bị hỏng gòi, OPPS"

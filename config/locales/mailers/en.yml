@@ -10,5 +10,7 @@ en:
       content: "Thanks for signing up! To activate your account, please click the link below"
       remind: "If you didn't sign up for our service, you can ignore this email"
 
-    invalid_link: "Invalid activation link"
+    cancel_booking:
+      success: "Cancel booking success"
 
+    invalid_link: "Invalid activation link"

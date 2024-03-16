@@ -35,7 +35,6 @@ class FieldTypesController < ApplicationController
 
     flash[:danger] = t("field_types.not_found")
     redirect_to root_path
-    flash[:danger] = t("field_types.not_found")
   end
 
   def field_type_params

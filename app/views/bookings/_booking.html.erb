@@ -4,8 +4,12 @@
   <td><%= booking.start_time %></td>
   <td><%= booking.end_time %></td>
   <td><%= booking.field_type_name %></td>
+  <td>
+    <div class="spinner-border text-<%= check_status_booking(booking) %>" role="status">
+    </div>
+  </td>
   <td><%= "#{map_with_time_of_day(booking.prices).price} #{Settings.CURRENCY}" %></td>
   <td>
-    <%= button_to t("button.delete"), root_path, class: "btn btn-danger" %>
+    <%= button_to t("button.delete"), booking_path(booking), class: "btn btn-danger", method: :delete %>
   </td>
 </tr>

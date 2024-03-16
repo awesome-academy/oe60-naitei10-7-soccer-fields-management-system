@@ -1,0 +1,3 @@
+<%= turbo_stream.update "booking" do %>
+  <%= render(@bookings) || t("fields.empty") %>
+<% end %>
