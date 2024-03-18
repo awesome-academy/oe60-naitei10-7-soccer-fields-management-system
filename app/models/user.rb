@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_many :comments
   has_many :reviews
   has_many :fields
+  has_many :favorite_field_types
 
   has_secure_password
 

@@ -1,10 +1,10 @@
-<div class="container site-section">
+<div class="container site-section row">
   <div class="row">
-    <div class="col-6 title-section">
+    <div class="title-section">
       <h2 class="heading"><%= t("fields_detail.title") %></h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="site_section_field">
     <%= render(partial: "field_type", collection: @field.field_types) || t("fields.empty") %>
   </div>
 </div>

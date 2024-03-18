@@ -19,7 +19,12 @@ vi:
   fields:
     title: "Danh sách sân bóng đá"
     empty: "Không có loại trường nào được hiển thị"
+<<<<<<< HEAD
     search_placeholder: "Tìm kiếm tại đây"
+=======
+    favorite_success: "Yêu thích thành công"
+    favorite_fail: "Yêu thích thất bại"
+>>>>>>> ddd82b1 (Compelte feature mark favorite the field)
 
   field_types:
     booking_time: "Thời gian đặt sân"
