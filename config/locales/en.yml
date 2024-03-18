@@ -13,6 +13,9 @@ en:
     admin:
       introduce: "This is admin page"
 
+  admin:
+    introduce: "This is the admin page"
+
   field_attribute:
     name: "Field name"
     price: "Price"
@@ -21,3 +24,6 @@ en:
     field_type: "Field Type"
     start_time: "Start time"
     end_time: "End time"
+
+    user:
+      is_not_admin: "You are not admin"

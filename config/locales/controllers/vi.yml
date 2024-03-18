@@ -2,12 +2,25 @@ vi:
   application:
     user:
       not_login: "Người dùng cần đăng nhập"
+
   filed_type:
     overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
+
   controller:
     static_pages:
       not_found_field: "Không tìm thấy kết quả phù hợp"
+      
   booking:
     confirmed: "Đặt sân đã được xác nhận, bạn không thể hủy"
     canceled: "Đặt sân bị hủy"
     not_your: "Sân này không phải của bạn, vui lòng hủy đúng sân"
+
+  admin:
+    field:
+      create_success: "Tạo mới sân bóng thành công"
+      create_fail: "Tạo mới sân bóng thất bại"
+      delete_success: "Xóa sân bóng thành công"
+      delete_fail: "Xóa sân bóng thất bại"
+      field_not_found: "Không tìm thấy sân bóng"
+      invalid: "Admin không tồn tại"
+      can_destroy: "Sân này đã có người đặt, bạn không thể xóa"
