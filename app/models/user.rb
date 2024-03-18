@@ -10,7 +10,6 @@ class User < ApplicationRecord
   has_many :bookings
   has_many :comments
   has_many :reviews
-  has_many :fields
   has_many :favorite_field_types
   has_many :fields
 

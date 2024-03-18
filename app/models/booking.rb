@@ -13,6 +13,7 @@ class Booking < ApplicationRecord
   belongs_to :field_type
 
   scope :latest, -> { order(created_at: :desc) }
+  scope :by_ids, ->(ids) { where(id: ids) }
 
   delegate :field_type_name, :prices, :field, to: :field_type
   delegate :address, :name, to: :field

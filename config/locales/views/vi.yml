@@ -46,10 +46,6 @@ vi:
     email: "Thư điện tử"
     phone: "Số điện thoại"
 
-  booking:
-    delete_success: "Đặt sân đã bị xóa"
-    delete_fail: "Xóa đặt sân thất bại"
-
   admin:
     introduce: "Đây là trang quản trị viên"
     dashboard: "Bảng điều khiển"
@@ -62,6 +58,45 @@ vi:
     delete: "Xóa"
     add_field: "Thêm sân"
     close: "Đóng"
-
     field:
-      create: "Tạo"
+      create: "Tạo mới"
+    static_pages:
+      accept: "Xác nhận"
+      reject: "Từ chối"
+
+  booking:
+    delete_success: "Lịch đặt sân đã bị xóa"
+    delete_fail: "Đặt sân thành công"
+    field:
+      create: "Tạo mới"
+    add_field: "Thêm sân bóng"
+    close: "Đóng"
+    my_account: "Tài khoản của tôi"
+    log_out: "Đăng xuất"
+
+    static_pages:
+      accept: "Xác nhận"
+      reject: "Hủy yêu cầu"
+      welcome: "Chào mừng đến với trang chính"
+      hello: "Xin chào %{full_name}, chào mừng bạn đã quay trở lại"
+      settings: "Cài đặt"
+      admin_page: "Trang chủ"
+
+  email:
+    booking_accepted:
+      subject: "Đơn đặt sân của bạn đã được chấp nhận"
+      greeting: "Xin chào %{user_name},"
+      message: "Chúng tôi rất vui thông báo rằng đơn đặt sân của bạn đã được chấp nhận. Dưới đây là chi tiết đơn đặt sân của bạn:"
+      field_name: "Tên sân"
+      booked_date: "Ngày đặt sân"
+      start_time: "Thời gian bắt đầu"
+      end_time: "Thời gian kết thúc"
+
+    booking_rejected:
+      subject: "Đơn đặt sân của bạn đã bị từ chối"
+      greeting: "Xin chào %{user_name},"
+      message: "Chúng tôi rất tiếc phải thông báo rằng đơn đặt sân của bạn đã bị từ chối. Dưới đây là thông tin chi tiết:"
+      field_name: "Tên sân"
+      booked_date: "Ngày đặt sân"
+      start_time: "Thời gian bắt đầu"
+      end_time: "Thời gian kết thúc"

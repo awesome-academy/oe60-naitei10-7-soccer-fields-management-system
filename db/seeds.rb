@@ -19,6 +19,32 @@ def create_field_type_data
   end
 end
 
+def create_users
+  10.times do |n|
+    first_name = Faker::Name.first_name
+    last_name = Faker::Name.last_name
+    email = Faker::Internet.email
+    phone_number = Faker::PhoneNumber.phone_number
+    password = "Password@1"
+    role = 3
+    is_active = true # You can adjust this as needed
+    activated = true # You can adjust this as needed
+
+    User.create!(
+      first_name: first_name,
+      last_name: last_name,
+      email: email,
+      phone_number: phone_number,
+      password: password,
+      role: role,
+      is_active: is_active,
+      activated: activated,
+      activated_at: Time.zone.now # Assuming activated immediately
+    )
+  end
+end
+
 # create_field_data
 # create_price_data
-create_field_type_data
+# create_field_type_data
+create_users

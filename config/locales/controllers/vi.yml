@@ -2,6 +2,7 @@ vi:
   application:
     user:
       not_login: "Người dùng cần đăng nhập"
+      is_not_admin: "Bạn không phải là admin"
 
   filed_type:
     overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
@@ -24,3 +25,14 @@ vi:
       field_not_found: "Không tìm thấy sân bóng"
       invalid: "Admin không tồn tại"
       can_destroy: "Sân này đã có người đặt, bạn không thể xóa"
+
+    bookings:
+      success: "Thay đổi trạng thái đơn đặt sân thành công"
+      fail: "Thay đổi trạng thái đơn đặt sân thất bại"
+
+    cancel:
+        success: "Hủy đơn đặt sân thành công"
+        fail: "Hủy đơn đặt sân thất bại"
+
+    booking:
+      not_found: "Không tìm thấy đơn đặt này"

@@ -29,6 +29,11 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users
     resources :fields
+    resources :static_pages do
+      member do
+        patch "cancel"
+      end
+    end
   end
 
   # Booking history path

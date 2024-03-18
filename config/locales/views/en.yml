@@ -10,45 +10,41 @@ en:
     home: "Home"
     settings: "Settings"
     profile: "Profile"
-    booking_history: "Booking history"
+    booking_history: "Booking History"
 
   home:
-    title: "Setting foot on the football field"
-    description: "Book soccer fields quickly and easily with the soccer field booking app. There are plenty of amenities and activities to offer as you can choose from a range of high quality football pitches in your area."
+    title: "Step onto the football field"
+    description: "Book football fields quickly and easily with our football field booking app. Enjoy the convenience and flexibility as you choose from a range of high-quality football fields in your area."
 
   fields:
-    title: "Soccer fields list"
-    empty: "There's no field type to be displayed"
-    favorite_success: "Favorite successful"
-    favorite_fail: "Favorite fail"
+    title: "List of football fields"
+    empty: "No field types are displayed"
     search_placeholder: "Search here"
+    favorite_success: "Successfully added to favorites"
+    favorite_fail: "Failed to add to favorites"
 
   field_types:
     booking_time: "Booking time"
-    not_found: "Field not found"
-    available_time_slots: "Available time slots"
-    inavailable_time_slots: "Inavailable time slots"
+    not_found: "Football field not found"
+    available_time_slots: "Available fields"
+    inavailable_time_slots: "Booked fields"
+    note: "Rules of the game"
     booking_field_success: "Booking successful"
-    note: "Note"
     field_infomation: "Field information"
     action: "Action"
 
   fields_detail:
-    title: "Fields detail"
+    title: "Football field details"
 
   footer:
-    title: "All rights reserved | This template is made with by Tien + Manh"
+    title: "All rights reserved | Template by Tien + Manh"
 
   users:
     update_title: "Update"
     profile: "Profile"
-    information: "Information"
+    information: "Personal information"
     email: "Email"
     phone: "Phone number"
-
-  booking:
-    delete_success: "Booking has been deleted"
-    delete_fail: "Booking fail"
 
   admin:
     introduce: "This is the admin page"
@@ -60,8 +56,47 @@ en:
     title_address: "Address"
     title_actions: "Actions"
     delete: "Delete"
-    add_field: "Add Field"
+    add_field: "Add field"
     close: "Close"
-
     field:
       create: "Create"
+    static_pages:
+      accept: "Accept"
+      reject: "Reject"
+
+  booking:
+    delete_success: "Booking deleted"
+    delete_fail: "Booking failed"
+    field:
+      create: "Create"
+    add_field: "Add field"
+    close: "Close"
+    my_account: "My account"
+    log_out: "Log out"
+
+    static_pages:
+      accept: "Accept"
+      reject: "Reject"
+      welcome: "Welcome to the main page"
+      hello: "Hello %{full_name}, welcome back"
+      settings: "Settings"
+      admin_page: "Home"
+
+  email:
+    booking_accepted:
+      subject: "Your booking has been accepted"
+      greeting: "Hello %{user_name},"
+      message: "We are pleased to inform you that your booking has been accepted. Below are the details of your booking:"
+      field_name: "Field name"
+      booked_date: "Booked date"
+      start_time: "Start time"
+      end_time: "End time"
+
+    booking_rejected:
+      subject: "Your booking has been rejected"
+      greeting: "Hello %{user_name},"
+      message: "We regret to inform you that your booking has been rejected. Below are the details:"
+      field_name: "Field name"
+      booked_date: "Booked date"
+      start_time: "Start time"
+      end_time: "End time"

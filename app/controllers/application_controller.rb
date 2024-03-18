@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   include BookingsHelper
   include FieldTypesHelper
   include FieldsHelper
+
   before_action :set_locale
 
   def switch_language

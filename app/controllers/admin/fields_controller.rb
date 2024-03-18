@@ -51,10 +51,10 @@ module Admin
     def field_params
       params.permit(:name, :description, :phone_number, :address)
     end
-    
+
     def is_booking
       return if @field.field_types.flat_map(&:bookings).empty?
-      
+
       flash[:danger] = t("admin.field.can_destroy")
       redirect_to admin_fields_path
     end
