@@ -48,3 +48,7 @@ Naming/PredicateName:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+

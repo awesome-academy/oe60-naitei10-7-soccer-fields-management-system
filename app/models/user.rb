@@ -27,6 +27,13 @@ class User < ApplicationRecord
 
   before_create :create_activation_digest
 
+  scope :with_revenue_report, lambda {
+    joins(fields: { field_types: { bookings: :price } })
+      .where(bookings: { status: :confirmed })
+      .select("users.id, users.email, SUM(prices.price) AS total_amount")
+      .group("users.id")
+  }
+
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end

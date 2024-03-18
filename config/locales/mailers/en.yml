@@ -15,3 +15,5 @@ en:
       success: "Cancel booking success"
 
     invalid_link: "Invalid activation link"
+
+    report: "Monthly Revenue Report"

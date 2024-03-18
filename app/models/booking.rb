@@ -11,6 +11,7 @@ class Booking < ApplicationRecord
 
   belongs_to :user
   belongs_to :field_type
+  belongs_to :price, foreign_key: :price_id
 
   scope :latest, -> { order(created_at: :desc) }
   scope :by_ids, ->(ids) { where(id: ids) }
