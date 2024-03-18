@@ -11,4 +11,12 @@ module FieldTypesHelper
     end
     hours
   end
+
+  def field_type_status(field_type)
+    field_type.is_availible ? :success : :danger
+  end
+
+  def field_type_label_button_status(field_type)
+    field_type.is_availible ? t("button.availible_field") : t("button.inavailible_field")
+  end
 end

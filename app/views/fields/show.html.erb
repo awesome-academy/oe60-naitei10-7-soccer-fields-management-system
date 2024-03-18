@@ -4,7 +4,7 @@
       <h2 class="heading"><%= t("fields_detail.title") %></h2>
     </div>
   </div>
-  <div class="row">
-    <%= render(partial: "field_type", collection: @field.field_types) || t("fields.empty") %>
+  <div class="row" id="site_section_field">
+    <%= render(partial: "field_types/field_type", collection: @field.field_types) || t("fields.empty") %>
   </div>
 </div>

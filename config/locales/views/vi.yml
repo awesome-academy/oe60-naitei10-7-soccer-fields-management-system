@@ -20,6 +20,8 @@ vi:
     title: "Danh sách sân bóng đá"
     empty: "Không có loại trường nào được hiển thị"
     search_placeholder: "Tìm kiếm tại đây"
+    favorite_success: "Yêu thích thành công"
+    favorite_fail: "Yêu thích thất bại"
 
   field_types:
     booking_time: "Thời gian đặt sân"

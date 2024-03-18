@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   include Pagy::Backend
   include TimeHelper
   include BookingsHelper
+  include FieldTypesHelper
+  include FieldsHelper
   before_action :set_locale
 
   def switch_language

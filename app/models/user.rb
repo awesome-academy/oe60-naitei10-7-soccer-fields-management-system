@@ -11,6 +11,8 @@ class User < ApplicationRecord
   has_many :comments
   has_many :reviews
   has_many :fields
+  has_many :favorite_field_types
+  has_many :fields
 
   has_secure_password
 
@@ -21,6 +23,7 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates_confirmation_of :password_digest
   validate :password_requirements_are_met
+
   attr_accessor :activation_token
 
   before_create :create_activation_digest
