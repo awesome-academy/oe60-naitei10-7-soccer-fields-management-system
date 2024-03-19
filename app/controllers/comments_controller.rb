@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CommentsController < ApplicationController
   before_action :assign_dom_each_comment, only: :create
 
@@ -21,6 +22,6 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.permit :review_id, :content
+    params.permit :review_id, :content, :parent_comment_id
   end
 end
