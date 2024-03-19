@@ -1,10 +1,10 @@
 en:
   sessions:
-    sign_in_title: "Sign in"
+    sign_in_title: "Sign In"
 
   registrations:
-    sign_up_title: "Sign up"
-    remember_me: "Remember me"
+    sign_up_title: "Sign Up"
+    remember_me: "Remember Me"
 
   header:
     home: "Home"
@@ -44,15 +44,19 @@ en:
     profile: "Profile"
     information: "Personal information"
     email: "Email"
-    phone: "Phone number"
+    phone: "Phone Number"
+
+  booking:
+    delete_success: "Booking has been deleted"
+    delete_fail: "Failed to delete booking"
 
   admin:
     introduce: "This is the admin page"
     dashboard: "Dashboard"
-    field_manager: "Field manager"
+    field_manager: "Field Manager"
     title_name: "Name"
     title_description: "Description"
-    title_phone_number: "Phone number"
+    title_phone_number: "Phone Number"
     title_address: "Address"
     title_actions: "Actions"
     delete: "Delete"
@@ -79,26 +83,26 @@ en:
     static_pages:
       accept: "Accept"
       reject: "Reject"
-      welcome: "Welcome to Dashboard"
-      hello: "Hello %{full_name}, welcome to your awesome dashboard!"
+      welcome: "Welcome to the main page"
+      hello: "Hello %{full_name}, welcome back"
       settings: "Settings"
-      admin_page: "Admin page"
+      admin_page: "Admin Page"
 
   email:
     booking_accepted:
-      subject: "Your booking has been accepted"
+      subject: "Your booking request has been accepted"
       greeting: "Hello %{user_name},"
-      message: "We are pleased to inform you that your booking has been accepted. Below are the details of your booking:"
-      field_name: "Field name"
-      booked_date: "Booked date"
-      start_time: "Start time"
-      end_time: "End time"
+      message: "We are pleased to inform you that your booking request has been accepted. Below are the details of your booking:"
+      field_name: "Field Name"
+      booked_date: "Booked Date"
+      start_time: "Start Time"
+      end_time: "End Time"
 
     booking_rejected:
-      subject: "Your booking has been rejected"
+      subject: "Your booking request has been rejected"
       greeting: "Hello %{user_name},"
-      message: "We regret to inform you that your booking has been rejected. Below are the details:"
-      field_name: "Field name"
-      booked_date: "Booked date"
-      start_time: "Start time"
-      end_time: "End time"
+      message: "We regret to inform you that your booking request has been rejected. Below are the details:"
+      field_name: "Field Name"
+      booked_date: "Booked Date"
+      start_time: "Start Time"
+      end_time: "End Time"

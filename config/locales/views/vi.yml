@@ -56,6 +56,16 @@ vi:
     title_address: "Địa chỉ"
     title_actions: "Hành động"
     delete: "Xóa"
+    add_field: "Thêm sân"
+    close: "Đóng"
+    field:
+      create: "Tạo mới"
+
+  booking:
+    delete_success: "Lịch đặt sân đã bị xóa"
+    delete_fail: "Đặt sân thành công"
+    field:
+      create: "Tạo mới"
     add_field: "Thêm sân bóng"
     close: "Đóng"
     field:

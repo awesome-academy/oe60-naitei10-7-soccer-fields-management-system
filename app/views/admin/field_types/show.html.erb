@@ -1,60 +1,7 @@
-<table class="table table-hover table-dark table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col"><%= t("admin.title_name_type") %></th>
-      <th scope="col"><%= t("admin.title_name") %></th>
-      <th scope="col"><%= t("admin.title_description") %></th>
-      <th scope="col"><%= t("admin.title_phone_number") %></th>
-      <th scope="col"><%= t("admin.title_address") %></th>
-      <th scope="col"><%= t("admin.title_actions") %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @field_types.each do |field_type| %>
-      <tr>
-        <th scope="row"><%= field_type.id %></th>
-        <td><%= field_type.field_type_name %></td>
-        <td><%= field_type.field.name %></td>
-        <td><%= field_type.field.description %></td>
-        <td><%= field_type.field.phone_number %></td>
-        <td><%= field_type.field.address %></td>
-        <td>
-          <%= button_to t("admin.delete") , admin_field_type_path(field_type), method: :delete, class: "btn btn-danger" %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render "table"%>
 <%== pagy_bootstrap_nav @pagy if @field_types.present? %>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   <%= t("admin.add_field") %>
 </button>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <%= form_with(model: @field_type, url: admin_field_types_path(field_id: @field.id), method: :post) do |form| %>
-          <div class="form-group">
-            <%= form.label :field_type_name %>
-            <%= form.text_field :field_type_name, class: "form-control" %>
-          </div>
-          <% %w(Morning_Price Afternoon_Price Evening_Price).each do |period| %>
-            <div class="form-group">
-              <%= form.label "#{period.downcase}", period %>
-              <%= form.text_field "#{period.downcase}", class: "form-control" %>
-            </div>
-          <% end %>
-          <%= form.submit "Create", class: "btn btn-primary" %>
-        <% end %>
-      </div>
-      <button type="button" class="btn btn-secondary" data-dismiss="modal"><%= t("admin.close") %></button>
-    </div>
-  </div>
-</div>
+<%= render "create"%>
