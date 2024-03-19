@@ -17,6 +17,7 @@ en:
     inavailible_field: "Inavailible "
     confirm: "Confirm"
     delete: "Delete"
+    reviews: "Reviews"
 
   model:
     user:
