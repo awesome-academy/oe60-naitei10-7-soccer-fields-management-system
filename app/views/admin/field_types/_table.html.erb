@@ -21,7 +21,6 @@
         <td><%= field_type.field.address %></td>
         <td>
           <%= button_to t("admin.delete"), admin_field_type_path(field_type), method: :delete, class: "btn btn-danger" %>
-          <!-- Button trigger modal for updating -->
           <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#updateModal<%= field_type.id %>">
             <%= t("admin.update") %>
           </button>
