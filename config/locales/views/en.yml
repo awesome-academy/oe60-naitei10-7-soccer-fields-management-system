@@ -100,3 +100,8 @@ en:
       booked_date: "Booked date"
       start_time: "Start time"
       end_time: "End time"
+
+  review:
+    name: "Name"
+    review_success: "Review success"
+    review_fail: "Review fail"

@@ -4,7 +4,7 @@ vi:
       not_login: "Người dùng cần đăng nhập"
       is_not_admin: "Bạn không phải là admin"
 
-  filed_type:
+  field_type:
     overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
 
   controller:

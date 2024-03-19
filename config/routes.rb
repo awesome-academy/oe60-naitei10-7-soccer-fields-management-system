@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   resources :fields, only: %i(show index)
 
   # Field type path
-  resources :field_types, only: %i(show create update)
+  resources :field_types, only: %i(show create)
 
   # User path
   resources :users
@@ -41,4 +41,7 @@ Rails.application.routes.draw do
 
   # Favorite path
   resources :favorite_field_types, only: :create
+
+  # Review path
+  resources :reviews, only: %i(create update)
 end

@@ -52,3 +52,7 @@ Layout/EmptyLineAfterMagicComment:
 Layout/LineLength:
   Enabled: false
 
+Style/ClassVars:
+  Enabled: false
+
+
