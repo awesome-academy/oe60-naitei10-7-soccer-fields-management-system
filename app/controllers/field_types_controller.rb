@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class FieldTypesController < ApplicationController
+  layout "guest"
+
   before_action :load_field_type, :load_field_type_booked, only: %i(show create)
   before_action :logged_in_user, :has_overlap, only: :create
   before_action :load_reviews, only: :show

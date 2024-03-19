@@ -14,7 +14,7 @@
       </div>
       <h5 class=""><%= "#{map_with_time_of_day(field_type.prices).price} $" %></h5>
       <h3 class="mb-4"><%= field_type.field_type_name %></h3>
-      <%= link_to t("button.booking"), root_path, class: "btn btn-danger" %>
+      <%= is_show_booking_button ? link_to(t("button.booking"), field_type_path(field_type), class: "btn btn-danger") : "" %>
     </div>
   </div>
 </div>

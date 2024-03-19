@@ -1,3 +1,3 @@
 <%= turbo_stream.replace @dom_id do %>
-  <%= render partial: "field_types/field_type", locals: { field_type: @favorite.field_type } %>
+  <%= render partial: "field_types/field_type", locals: { field_type: @favorite.field_type , is_show_booking_button: true} %>
 <% end %>

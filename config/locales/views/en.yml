@@ -10,7 +10,8 @@ en:
     home: "Home"
     settings: "Settings"
     profile: "Profile"
-    booking_history: "Booking History"
+    booking_history: "Booking history"
+    favorite_list: "Favorite list"
 
   home:
     title: "Step onto the football field"
@@ -73,6 +74,7 @@ en:
     close: "Close"
     my_account: "My account"
     log_out: "Log out"
+    booking_history_list: "Booking history list"
 
     static_pages:
       accept: "Accept"
@@ -109,3 +111,5 @@ en:
   comment:
     comment_success: "Comment has been created"
     comment_fail: "Comment fail"
+
+  favorite_field_type_list: "Favorite field type list"

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class ReviewsController < ApplicationController
+  layout "guest"
+
   @@rating = 5
 
   def update

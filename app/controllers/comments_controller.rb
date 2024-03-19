@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class CommentsController < ApplicationController
+  layout "guest"
+
   before_action :assign_dom_each_comment, only: :create
 
   def create
