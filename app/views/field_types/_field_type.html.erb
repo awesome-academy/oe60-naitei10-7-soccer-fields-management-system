@@ -8,7 +8,9 @@
     <div class="text">
       <div class="d-flex align-items-center justify-content-between">
         <div class="<%= "my-3 px-2 py-1 badge badge-#{field_type_status(field_type)}" %>"><%= field_type_label_button_status(field_type) %></div>
-      
+        <%= button_to favorite_field_types_path, method: :post, class: "bg-transparent", params: { field_type_id: field_type.id, dom_id: "favorite-#{field_type.id}" }, remote: true do %>
+          <i class="<%= "#{check_is_user_favorited?(field_type)} fa-heart text-danger h3" %>"></i>
+        <% end %>
       </div>
       <h5 class=""><%= "#{map_with_time_of_day(field_type.prices).price} $" %></h5>
       <h3 class="mb-4"><%= field_type.field_type_name %></h3>

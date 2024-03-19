@@ -5,6 +5,6 @@ module FieldsHelper
     is_user_favorited = current_user.favorite_field_types.find do |f|
       f[:user_id] == current_user.id && f[:field_type_id] == field.id
     end
-    is_user_favorited ? :heart : "heart-outline"
+    is_user_favorited ? "fa-solid" : "fa-regular"
   end
 end
