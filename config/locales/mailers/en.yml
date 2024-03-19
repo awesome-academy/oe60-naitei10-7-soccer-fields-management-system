@@ -9,6 +9,7 @@ en:
       welcome_text: "Hello"
       content: "Thanks for signing up! To activate your account, please click the link below"
       remind: "If you didn't sign up for our service, you can ignore this email"
+      booking: "Please check your email"
 
     cancel_booking:
       success: "Cancel booking success"

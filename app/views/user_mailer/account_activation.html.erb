@@ -1,5 +1,0 @@
-<h1><%= t("email.activation.title") %></h1>
-<p><%= t("email.activation.welcome_text") %> <%= @user[:name] %>,</p>
-<p><%= t("email.activation.content") %>:</p>
-<%= link_to t("email.activation.active_now"), activate_user_url(@user.activation_digest) %>
-<p><%= t("email.activation.remind") %>.</p>

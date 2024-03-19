@@ -56,3 +56,5 @@ gem "config"
 gem "bootstrap-icons-helper"
 
 gem "font-awesome-sass"
+
+gem "faker"

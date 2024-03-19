@@ -9,6 +9,7 @@ vi:
       welcome_text: "Xin chào"
       content: "Cảm ơn bạn đã đăng kí, vui lòng kích hoạt đường dẫn bên dưới để kích hoạt !"
       remind: "Nếu bạn không đăng kí, vui lòng bỏ qua thư này"
+      booking: "Vui lòng kiểm tra email"
 
     cancel_booking:
       success: "Hủy thành công"
