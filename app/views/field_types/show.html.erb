@@ -1,13 +1,7 @@
 <div class="row site-section bg-dark m-5 p-0">
-<<<<<<< HEAD
   <div class="col-6">
     <div class="m-auto">
       <h1 class="text-center mt-1 mb-4"><%= t("field_types.field_infomation") %></h1>
-=======
-  <div class="col-6 mt-4">
-    <div class="m-auto">
-      <h1 class="text-center mt-1"><%= t("field_types.field_infomation") %></h1>
->>>>>>> c497206 (Complete feature review to the field type)
       <div class="card">
         <img src="<%= asset_path("img_1.jpg") %>" alt="Image" class=" card-img-top" style="height: 150px; object-fit: cover">
         <div class="card-body">
@@ -21,15 +15,9 @@
       <div id="review" style="height: 400px; overflow-y: scroll">
         <%= render @reviews %>
       </div>
-<<<<<<< HEAD
       <div class="form-group mt-2 border border-white rounded p-3">
         <ul class="ratingW float-right row">
           <% Settings.MAX_RATING.times do |i| %>
-=======
-      <div class="form-group mt-2">
-        <ul class="ratingW float-right row">
-          <% 5.times do |i| %>
->>>>>>> c497206 (Complete feature review to the field type)
             <li>
               <a>
                 <%= button_to review_path, method: :put, class: "bg-transparent", params: { rating: i + 1 } do %>
@@ -38,10 +26,6 @@
                 <% end %>
               </a>
             </li>
-<<<<<<< HEAD
-=======
-
->>>>>>> c497206 (Complete feature review to the field type)
           <% end %>
         </ul>
         <%= form_for @field_type, url: reviews_path, method: :post do %>
