@@ -15,7 +15,7 @@
       <div id="review" style="height: 400px; overflow-y: scroll">
         <%= render @reviews %>
       </div>
-      <div class="form-group mt-2">
+      <div class="form-group mt-2 border border-white rounded p-3">
         <ul class="ratingW float-right row">
           <% 5.times do |i| %>
             <li>
@@ -69,6 +69,5 @@
       <p class="btn btn-danger mr-2"><%= t("field_types.inavailable_time_slots") %></p>
       <p class="btn btn-white"><%= t("field_types.available_time_slots") %></p>
     </div>
-
   </div>
 </div>

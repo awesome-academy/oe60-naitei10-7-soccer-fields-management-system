@@ -18,6 +18,7 @@ vi:
     confirm: "Xác nhận"
     delete: "Xóa"
     reviews: "Đánh giá"
+    comment: "Bình luận"
 
   model:
     user:
