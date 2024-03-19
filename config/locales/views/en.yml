@@ -104,8 +104,13 @@ en:
     booking_rejected:
       subject: "Your booking request has been rejected"
       greeting: "Hello %{user_name},"
-      message: "We regret to inform you that your booking request has been rejected. Below are the details:"
-      field_name: "Field Name"
-      booked_date: "Booked Date"
-      start_time: "Start Time"
-      end_time: "End Time"
+      message: "We regret to inform you that your booking has been rejected. Below are the details:"
+      field_name: "Field name"
+      booked_date: "Booked date"
+      start_time: "Start time"
+      end_time: "End time"
+
+  review:
+    name: "Name"
+    review_success: "Review success"
+    review_fail: "Review fail"
