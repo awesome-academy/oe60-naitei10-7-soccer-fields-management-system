@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 class FavoriteFieldTypesController < ApplicationController
+  layout "guest"
   before_action :logged_in_user, :load_dom_id, only: :create
+  def show
+    @favorites = current_user.favorite_field_types.map(&:field_type)
+  end
 
   def create
     handle_error_and_redirect do

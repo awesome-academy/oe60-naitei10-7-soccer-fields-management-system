@@ -379,10 +379,13 @@ h1, h2, h3, h4, h5,
 }
 
 .site-navbar {
-    margin-bottom: 0px;
     z-index: 1999;
     position: absolute;
     width: 100%;
+    top: 0;
+}
+.section-main {
+  margin-top: 150px !important;
 }
 
 .site-navbar .container-fluid {
@@ -848,7 +851,7 @@ h1, h2, h3, h4, h5,
 }
 
 .hero, .hero > .container > .row {
-    height: 98vh;
+    height: 83vh;
     min-height: 500px;
 }
 

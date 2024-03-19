@@ -1,0 +1,6 @@
+<div class="container title-section">
+  <h2 class="heading my-5"><%= t("favorite_field_type_list") %></h2>
+  <div class="row">
+    <%= render(partial: "field_types/field_type", collection: @favorites, locals: { is_show_booking_button: false }) || t("fields.empty") %>
+  </div>
+</div>

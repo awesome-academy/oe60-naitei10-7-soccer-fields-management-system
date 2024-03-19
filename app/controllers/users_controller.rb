@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
+  layout "guest"
   before_action :logged_in_user, except: %i(new show)
   before_action :load_user, except: %i(index new)
   before_action :correct_user, only: %i(edit update)
