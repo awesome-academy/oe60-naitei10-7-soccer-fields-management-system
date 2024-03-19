@@ -19,6 +19,7 @@ en:
     delete: "Delete"
     reviews: "Reviews"
     comment: "Comment"
+    replies: "Replies"
 
   model:
     user:
