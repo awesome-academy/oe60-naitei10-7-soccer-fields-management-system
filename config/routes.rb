@@ -40,8 +40,8 @@ Rails.application.routes.draw do
   # Booking history path
   resources :bookings, only: %i(index destroy create)
 
-  # Favorite path
-  resources :favorite_field_types, only: :create
+  # Favorite field type path
+  resources :favorite_field_types, only: %i(create show)
 
   # Review field type path
   resources :reviews, only: %i(update create)

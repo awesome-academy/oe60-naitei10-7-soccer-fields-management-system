@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class FieldsController < ApplicationController
+  layout "guest"
+
   include FieldsHelper
   before_action :load_field, only: :show
 

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class FieldTypesController < ApplicationController
+  layout "guest"
   before_action :load_field_type, :load_reviews, :load_field_type_booked, only: :show
 
   def show; end

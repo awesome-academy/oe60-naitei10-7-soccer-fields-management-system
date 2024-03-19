@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class BookingsController < ApplicationController
+  layout "guest"
+
   before_action :logged_in_user, :load_bookings, only: %i(index destroy)
   before_action :check_booking_owner, :is_allow_cancel_booking, only: :destroy
   before_action :logged_in_user, :load_field_type, :has_overlap, only: :create
