@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oe60Naitei107SoccerFieldsManagementSystem</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= turbo_include_tags %>
+</head>
+<body>
+<%= render partial: "layouts/header" %>
+<div class="col-3 m-auto message"><%= render partial: "shared/flash_messages" %></div>
+<div class="section-main">
+  <%= yield %>
+</div>
+<%= render partial: "layouts/footer"%>
+</body>
+</html>
