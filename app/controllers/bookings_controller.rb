@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
       flash[:success] = t("field_types.booking_field_success")
       redirect_to field_type_path(@field_type)
     else
-      render :show, status: :unprocessable_entity
+      render :index, status: :unprocessable_entity
     end
   end
 

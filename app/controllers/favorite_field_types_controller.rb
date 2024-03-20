@@ -5,7 +5,7 @@ class FavoriteFieldTypesController < ApplicationController
   layout "guest"
 
   before_action :logged_in_user, :load_dom_id, only: :create
-  def show
+  def index
     @favorites = current_user.favorite_field_types.map(&:field_type)
   end
 

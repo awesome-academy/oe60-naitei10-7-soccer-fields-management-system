@@ -1,22 +1,24 @@
-<%= render "field" %>
-<%== pagy_bootstrap_nav @pagy if @fields.present? %>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  <%= t("admin.add_field") %>
-</button>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<div class="mt-5 p-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <%== pagy_bootstrap_nav @pagy if @fields.present? %>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+      <%= t("admin.add_field") %>
+    </button>
+  </div>
+  <%= render "field" %>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content  p-3">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="exampleModalLongTitle">Create new field type</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <%= render "form" %>
       </div>
-      <div class="modal-body">
-        <%= render "form" %>
-      </div>
-      <button type="button" class="btn btn-secondary" data-dismiss="modal"><%= t("admin.close") %></button>
     </div>
   </div>
+
 </div>

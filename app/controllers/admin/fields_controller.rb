@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 module Admin
-  class FieldsController < ApplicationController
+  class FieldsController < Admin::AdminController
     load_and_authorize_resource
 
     before_action :load_field, :is_booking, only: %i(destroy)

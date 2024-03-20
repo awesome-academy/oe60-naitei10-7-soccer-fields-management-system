@@ -1,7 +1,7 @@
 <h1><%= t("email.booking_rejected.subject") %></h1>
 <p><%= t("email.booking_rejected.greeting", user_name: @booking.user.full_name) %>,</p>
 <p><%= t("email.booking_rejected.message") %></p>
-<p><%= t("email.booking_rejected.field_name") %>: <%= @booking.field_type.field_type_name %></p>
+<p><%= t("email.booking_rejected.field_name") %>: <%= @booking.field_type_name %></p>
 <p><%= t("email.booking_rejected.booked_date") %>: <%= @booking.booked_date %></p>
 <p><%= t("email.booking_rejected.start_time") %>: <%= @booking.start_time %></p>
 <p><%= t("email.booking_rejected.end_time") %>: <%= @booking.end_time %></p>
