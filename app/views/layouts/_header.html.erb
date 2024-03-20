@@ -4,7 +4,7 @@
       <div class="site-logo">
         <%= link_to root_path do %>
           <img src="<%= asset_path("logo.png") %>" alt="Logo">
-          <%end %>
+        <% end %>
       </div>
       <div class="ml-auto">
         <%= render "layouts/language" %>
@@ -14,18 +14,22 @@
               <%= link_to t("header.home"), root_path, class: "nav-link" %>
             </li>
             <li>
-              <% if logged_in? %>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <%= t("header.settings") %>
-                  </button>
-                  <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <%= t("header.settings") %>
+                </button>
+                <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                  <% if logged_in? %>
                     <%= link_to t("header.profile"), edit_user_path(current_user) %>
                     <%= link_to t("header.booking_history"), bookings_path %>
                     <%= link_to t("header.favorite_list"), favorite_field_type_path(current_user) %>
-                  </div>
+                    <%= button_to t("header.log_out"), logout_path, method: :delete %>
+                  <% else %>
+                    <%= link_to t("sessions.sign_in_title"), signin_path %>
+                  <% end %>
                 </div>
-              <% end %>
+              </div>
             </li>
           </ul>
         </nav>
