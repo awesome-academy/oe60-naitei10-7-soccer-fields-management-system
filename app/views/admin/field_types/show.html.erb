@@ -1,8 +1,7 @@
-<%= render "field" %>
-<%== pagy_bootstrap_nav @pagy if @fields.present? %>
+<%= render "table"%>
+<%== pagy_bootstrap_nav @pagy if @field_types.present? %>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   <%= t("admin.add_field") %>
 </button>
-<!-- Modal -->
-<%= render "table"%>
+<%= render "create"%>

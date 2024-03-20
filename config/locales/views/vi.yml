@@ -60,6 +60,16 @@ vi:
     close: "Đóng"
     field:
       create: "Tạo mới"
+
+  booking:
+    delete_success: "Lịch đặt sân đã bị xóa"
+    delete_fail: "Đặt sân thành công"
+    field:
+      create: "Tạo mới"
+    add_field: "Thêm sân bóng"
+    close: "Đóng"
+    field:
+      create: "Tạo mới"
     static_pages:
       accept: "Xác nhận"
       reject: "Từ chối"

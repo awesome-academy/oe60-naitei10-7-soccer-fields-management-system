@@ -34,6 +34,7 @@ Rails.application.routes.draw do
         patch "cancel"
       end
     end
+    resources :field_types
   end
 
   # Booking history path

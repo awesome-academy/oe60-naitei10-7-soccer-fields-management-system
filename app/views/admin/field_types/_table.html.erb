@@ -1,0 +1,33 @@
+<table class="table table-hover table-dark table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"><%= t("admin.title_name_type") %></th>
+      <th scope="col"><%= t("admin.title_name") %></th>
+      <th scope="col"><%= t("admin.title_description") %></th>
+      <th scope="col"><%= t("admin.title_phone_number") %></th>
+      <th scope="col"><%= t("admin.title_address") %></th>
+      <th scope="col"><%= t("admin.title_actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @field_types.each do |field_type| %>
+      <tr>
+        <th scope="row"><%= field_type.id %></th>
+        <td><%= field_type.field_type_name %></td>
+        <td><%= field_type.field.name %></td>
+        <td><%= field_type.field.description %></td>
+        <td><%= field_type.field.phone_number %></td>
+        <td><%= field_type.field.address %></td>
+        <td>
+          <%= button_to t("admin.delete"), admin_field_type_path(field_type), method: :delete, class: "btn btn-danger" %>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#updateModal<%= field_type.id %>">
+            <%= t("admin.update") %>
+          </button>
+        </td>
+      </tr>
+      <!-- Update Modal -->
+      <%= render "update", field_type: field_type%>
+    <% end %>
+  </tbody>
+</table>

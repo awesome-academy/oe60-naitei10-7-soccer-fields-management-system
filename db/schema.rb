@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_18_053706) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_19_145316) do
   create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "start_time"
     t.string "end_time"
@@ -23,14 +23,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_053706) do
     t.bigint "price_id"
     t.index ["field_type_id"], name: "index_bookings_on_field_type_id"
     t.index ["id"], name: "index_bookings_on_id"
-    t.index ["price_id"], name: "fk_rails_5ebf20ad89"
+    t.index ["price_id"], name: "index_bookings_on_price_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "content"
     t.bigint "user_id", null: false
-    t.bigint "review_id"
+    t.bigint "review_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "parent_comment_id"
@@ -71,8 +71,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_053706) do
   end
 
   create_table "prices", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "price"
+    t.string "name", limit: 50
+    t.string "price", limit: 20
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "field_type_id", null: false
@@ -81,13 +81,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_053706) do
   end
 
   create_table "reviews", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "rating"
+    t.text "content"
     t.bigint "user_id", null: false
-    t.bigint "field_type_id", null: false
+    t.bigint "field_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "content"
-    t.integer "rating"
-    t.index ["field_type_id"], name: "index_reviews_on_field_type_id"
+    t.index ["field_id"], name: "index_reviews_on_field_id"
     t.index ["id"], name: "index_reviews_on_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
@@ -108,8 +108,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_053706) do
     t.index ["id"], name: "index_users_on_id"
   end
 
-  add_foreign_key "booking_amounts", "bookings"
-  add_foreign_key "booking_amounts", "prices"
   add_foreign_key "bookings", "field_types"
   add_foreign_key "bookings", "prices"
   add_foreign_key "bookings", "users"
