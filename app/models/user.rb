@@ -7,11 +7,13 @@ class User < ApplicationRecord
     user: 3
   }, _default: :user
 
-  has_many :bookings
-  has_many :comments
-  has_many :reviews
-  has_many :favorite_field_types
-  has_many :fields
+  attribute :activated, :boolean, default: false
+
+  has_many :bookings, dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_many :reviews, dependent: :destroy
+  has_many :favorite_field_types, dependent: :destroy
+  has_many :fields, dependent: :destroy
 
   has_secure_password
 
@@ -60,6 +62,10 @@ class User < ApplicationRecord
 
   def full_name
     "#{first_name} #{last_name}"
+  end
+
+  def self.delete_inactive_expired_accounts
+    User.where(activated: false).where("created_at >?", Settings.NUMBER_THRESHOLD.hours.ago).delete_all
   end
 
   private

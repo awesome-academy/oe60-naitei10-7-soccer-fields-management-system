@@ -1,6 +1,6 @@
 .message {
     position: absolute;
-    background-color: aquamarine;
+    top: 10px;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);

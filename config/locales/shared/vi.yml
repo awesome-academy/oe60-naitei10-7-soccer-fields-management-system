@@ -17,6 +17,9 @@ vi:
     inavailible_field: "Hết sân"
     confirm: "Xác nhận"
     delete: "Xóa"
+    reviews: "Đánh giá"
+    comment: "Bình luận"
+    replies: "Trả lời"
 
   model:
     user:
