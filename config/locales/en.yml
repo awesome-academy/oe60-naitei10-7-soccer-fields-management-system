@@ -27,3 +27,5 @@ en:
 
     user:
       is_not_admin: "You are not admin"
+
+  permission_denied: "you are not authorized to access this resource"

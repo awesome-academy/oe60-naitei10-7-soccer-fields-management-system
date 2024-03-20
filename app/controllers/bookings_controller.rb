@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class BookingsController < ApplicationController
+  load_and_authorize_resource
+
   layout "guest"
 
   before_action :logged_in_user, :load_bookings, only: %i(index destroy)

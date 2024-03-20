@@ -27,3 +27,5 @@ vi:
 
     user:
       is_not_admin: "Bạn không phải là admin"
+
+  permission_denied: "bạn không được phép truy cập tài nguyên này"

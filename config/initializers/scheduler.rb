@@ -5,6 +5,6 @@ scheduler = Rufus::Scheduler.new
 scheduler.cron "0 0 1 * *" do
   ReportsController.send_monthly_report
 end
-scheduler.cron "1d" do
+scheduler.cron "0 17 * * *" do
   User.delete_inactive_expired_accounts
 end

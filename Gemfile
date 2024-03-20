@@ -36,6 +36,8 @@ gem "pagy"
 
 gem "rufus-scheduler"
 
+gem "cancancan"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "byebug"
