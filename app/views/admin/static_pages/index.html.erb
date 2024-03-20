@@ -42,91 +42,37 @@
     </div>
   </nav>
   <div class="p-4">
-    <div class="welcome">
-      <div class="content rounded-3 p-3">
-        <h1 class="fs-3"><%= t("admin.static_pages.welcome") %></h1>
-        <p class="mb-0"><%= t("admin.static_pages.hello", full_name: current_user.full_name) %></p>
-      </div>
-    </div>
     <section class="statistics mt-4">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
-            <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle">
-              <ion-icon name="mail-outline"></ion-icon>
-            </i>
-            <div class="ms-3">
-              <div class="d-flex align-items-center">
-                <h3 class="mb-0">1,245</h3>
-                <span class="d-block ms-2">Emails</span>
-              </div>
-              <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
-            <i class="uil-file fs-2 text-center bg-danger rounded-circle"></i>
-            <div class="ms-3">
-              <div class="d-flex align-items-center">
-                <h3 class="mb-0">34</h3>
-                <span class="d-block ms-2">Projects</span>
-              </div>
-              <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="box d-flex rounded-2 align-items-center p-3">
-            <i class="uil-users-alt fs-2 text-center bg-success rounded-circle"></i>
-            <div class="ms-3">
-              <div class="d-flex align-items-center">
-                <h3 class="mb-0">5,245</h3>
-                <span class="d-block ms-2">Users</span>
-              </div>
-              <p class="fs-normal mb-0">Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%== pagy_bootstrap_nav @pagy %>
       <div class="box d-flex rounded-2 align-items-center mb-4 mt-4">
         <div class="content rounded-3 p-3">
-          <ul class="order-list" id="booking">
-            <%= render partial: "booking" %>
-            <%== pagy_bootstrap_nav @pagy %>
+          <ul class="order-list">
+            <% @bookings.each do |booking| %>
+              <li class="order-item d-flex">
+                <span class="order-name"><%= "Booking Name: #{booking.user.full_name}" %></span>
+                <span class="order-day"><%= "Booking Day: #{booking.booked_date}" %></span>
+                <span class="order-time"><%= "Start time: #{booking.start_time}, End time: #{booking.end_time}" %></span>
+                <span class="order-field_type_name"><%= "Field name #{booking.field_type_name}" %></span>
+                <div class=" dropdown zindex-dropdown">
+                  <a class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu z-1" aria-labelledby="dropdownMenu2">
+                    <% if booking.status == 1 %>
+                      <%= button_to t("admin.static_pages.accept"), admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                      <%= button_to t("admin.static_pages.reject"), cancel_admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                    <% elsif booking.status == 2 %>
+                      <%= button_to "Pending", pending_admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                      <%= button_to t("admin.static_pages.reject"), cancel_admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                    <% else %>
+                      <%= button_to "Pending", pending_admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                      <%= button_to t("admin.static_pages.accept"), admin_static_page_path(booking), method: :patch, class: "dropdown-item" %>
+                    <%end %>
+                  </div>
+                </div>
+              </li>
+            <% end %>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section class="statis mt-4 text-center">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="box bg-primary p-3">
-            <i class="uil-eye"></i>
-            <h3>5,154</h3>
-            <p class="lead"></p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="box bg-danger p-3">
-            <i class="uil-user"></i>
-            <h3>245</h3>
-            <p class="lead">User registered</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-          <div class="box bg-warning p-3">
-            <i class="uil-shopping-cart"></i>
-            <h3>5,154</h3>
-            <p class="lead">Product sales</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box bg-success p-3">
-            <i class="uil-feedback"></i>
-            <h3>5,154</h3>
-            <p class="lead">Transactions</p>
-          </div>
         </div>
       </div>
     </section>

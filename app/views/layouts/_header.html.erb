@@ -23,7 +23,7 @@
                   <% if logged_in? %>
                     <%= link_to t("header.profile"), edit_user_path(current_user) %>
                     <%= link_to t("header.booking_history"), bookings_path %>
-                    <%= link_to t("header.favorite_list"), favorite_field_type_path(current_user) %>
+                    <%= link_to t("header.favorite_list"), favorite_field_types_path %>
                     <%= button_to t("header.log_out"), logout_path, method: :delete %>
                   <% else %>
                     <%= link_to t("sessions.sign_in_title"), signin_path %>

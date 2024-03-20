@@ -7,7 +7,7 @@ class Ability
     if user.super_admin?
       can :manage, :all
     elsif user.admin?
-      can :manage, [Booking, Field, FieldType]
+      can :manage, [Booking, Field, FieldType, FavoriteFieldType]
     elsif user.user?
       can :read, [Field, FieldType, Booking]
       can :read, Booking, user_id: user.id

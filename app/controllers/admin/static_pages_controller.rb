@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 module Admin
-  class StaticPagesController < ApplicationController
-    before_action :bookings, only: %i(index update cancel)
-    before_action :load_booking, only: %i(update cancel)
+  class StaticPagesController < Admin::AdminController
+    before_action :bookings, only: :index
+    before_action :load_booking, only: %i(update cancel pending)
 
     def index
       bookings_get
@@ -25,6 +25,16 @@ module Admin
       end
       bookings_get
     end
+    def pending
+      if @booking.update(status: :pending)
+        BookingMailer.booking_accepted_email(@booking).deliver_now
+        flash[:success] = t("admin.bookings.success")
+        redirect_to admin_static_pages_path
+      else
+        flash[:danger] = t("admin.bookings.fail")
+        redirect_to root_path
+      end
+    end
 
     def cancel
       respond_to do |format|
@@ -42,7 +52,7 @@ module Admin
     private
 
     def bookings
-      @bookings = Booking.pending.by_ids(current_user.booking_ids)
+      @bookings = current_user.fields.joins(field_types: :bookings).select("*")
     end
 
     def load_booking

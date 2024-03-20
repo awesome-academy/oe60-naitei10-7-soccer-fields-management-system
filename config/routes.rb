@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     resources :static_pages do
       member do
         patch "cancel"
+        patch "pending"
       end
     end
     resources :field_types
@@ -41,7 +42,7 @@ Rails.application.routes.draw do
   resources :bookings, only: %i(index destroy create)
 
   # Favorite field type path
-  resources :favorite_field_types, only: %i(create show)
+  resources :favorite_field_types, only: %i(create index)
 
   # Review field type path
   resources :reviews, only: %i(update create)

@@ -176,14 +176,6 @@ body {
     background-color: #1da0f2;
     border-radius: 12px;
     padding: 12px;
-
-    &:hover {
-      background-color: var(--dk-gray-200);
-    }
-  }
-
-  &:hover {
-    transform: translate(5px);
   }
 }
 
