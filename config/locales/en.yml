@@ -27,5 +27,4 @@ en:
     user:
       is_not_admin: "You are not admin"
 
-  admin:
-    introduce: "This is the admin page"
+  permission_denied: "you are not authorized to access this resource"

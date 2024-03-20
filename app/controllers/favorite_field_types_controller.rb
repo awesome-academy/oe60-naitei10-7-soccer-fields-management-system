@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 class FavoriteFieldTypesController < ApplicationController
+  load_and_authorize_resource
+
   layout "guest"
+
   before_action :logged_in_user, :load_dom_id, only: :create
   def show
     @favorites = current_user.favorite_field_types.map(&:field_type)

@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  rescue_from CanCan::AccessDenied do
+    flash[:danger] = t("permission_denied")
+    redirect_to root_url
+  end
+
   include ErrorHandlingHelper
   include SessionsHelper
   include Pagy::Backend
