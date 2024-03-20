@@ -12,6 +12,7 @@ en:
     profile: "Profile"
     booking_history: "Booking history"
     favorite_list: "Favorite list"
+    log_out: "Log out"
 
   home:
     title: "Step onto the football field"
