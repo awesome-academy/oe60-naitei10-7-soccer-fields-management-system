@@ -5,6 +5,17 @@ module SessionsHelper
     session[:user_id] = user.id
   end
 
+  def log_out
+    forget_user
+    reset_session
+    @current_user = nil
+  end
+
+  def forget_user
+    cookies.delete :user_id
+    cookies.delete :remember_token
+  end
+
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
