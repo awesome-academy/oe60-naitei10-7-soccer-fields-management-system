@@ -11,6 +11,7 @@ vi:
     settings: "Cài đặt"
     profile: "Hồ sơ"
     booking_history: "Lịch sử đặt sân"
+    favorite_list: "Danh sách sân yêu thích"
 
   home:
     title: "Đặt chân ra sân bóng đá"
@@ -73,6 +74,7 @@ vi:
     close: "Đóng"
     my_account: "Tài khoản của tôi"
     log_out: "Đăng xuất"
+    booking_history_list: "Danh sách lịch sử đặt sân"
 
     static_pages:
       accept: "Xác nhận"
@@ -100,3 +102,14 @@ vi:
       booked_date: "Ngày đặt sân"
       start_time: "Thời gian bắt đầu"
       end_time: "Thời gian kết thúc"
+
+  review:
+    name: "Tên"
+    review_success: "Đánh giá thành công"
+    review_fail: "Đánh giá không thành công"
+
+  comment:
+    comment_success: "Đã bình luận"
+    comment_fail: "Bình luận thất bại"
+
+  favorite_field_type_list: "Danh sách sân yêu thích"

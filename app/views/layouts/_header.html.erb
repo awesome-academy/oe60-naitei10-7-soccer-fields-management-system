@@ -2,7 +2,9 @@
   <div class="container">
     <div class="d-flex align-items-center">
       <div class="site-logo">
-        <img src="<%= asset_path("logo.png") %>" alt="Logo">
+        <%= link_to root_path do %>
+          <img src="<%= asset_path("logo.png") %>" alt="Logo">
+          <%end %>
       </div>
       <div class="ml-auto">
         <%= render "layouts/language" %>
@@ -20,6 +22,7 @@
                   <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
                     <%= link_to t("header.profile"), edit_user_path(current_user) %>
                     <%= link_to t("header.booking_history"), bookings_path %>
+                    <%= link_to t("header.favorite_list"), favorite_field_type_path(current_user) %>
                   </div>
                 </div>
               <% end %>
