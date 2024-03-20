@@ -12,6 +12,7 @@ vi:
     profile: "Hồ sơ"
     booking_history: "Lịch sử đặt sân"
     favorite_list: "Danh sách sân yêu thích"
+    log_out: "Đăng xuất"
 
   home:
     title: "Đặt chân ra sân bóng đá"
