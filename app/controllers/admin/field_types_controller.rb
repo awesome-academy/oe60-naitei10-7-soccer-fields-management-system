@@ -76,7 +76,7 @@ module Admin
     def build_prices(params)
       Price.names.each do |period|
         price_value = params["#{period[0]}_Price".downcase.to_sym]
-        @field_type.prices.build(name: period[0][0], price: price_value)
+        @field_type.prices.build(name: period[1], price: price_value)
       end
     end
 

@@ -17,7 +17,9 @@ module Oe60Naitei107SoccerFieldsManagementSystem
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w(assets tasks))
-
+    config.hosts << "d739-14-165-110-148.ngrok-free.app"
+    config.hosts << "d739-14-165-110-148.ngrok-free.app"
+    config.hosts << "localhost:3000"
     config.i18n.available_locales = %I[en vi]
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
     config.i18n.default_locale = :vi

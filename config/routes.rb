@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users
     resources :fields
+    resources :bookings, as: 'export_excel'
     resources :static_pages do
       member do
         patch "cancel"

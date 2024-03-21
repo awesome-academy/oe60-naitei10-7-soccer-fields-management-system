@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Payments") do |sheet|
+    sheet.add_row ["ID", "Email"]
+    @payments.each do |payment|
+        sheet.add_row [payment.id]
+    end
+end

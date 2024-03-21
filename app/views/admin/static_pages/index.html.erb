@@ -22,19 +22,16 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <i class="uil-bars text-white"></i>
         </button>
-        <a class="navbar-brand" href="#"><%= t("admin.static_pages.admin_page") %></a>
+        <a class="navbar-brand" href="#"><%= t("booking.static_pages.admin_page") %></a>
       </div>
       <div class="collapse navbar-collapse" id="toggle-navbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
             <a class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= t("admin.static_pages.settings") %>
+              <%= t("booking.static_pages.settings") %>
             </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu2">
-              <%= link_to admin_static_page_path(current_user), class: "dropdown-item" do %>
-                <%= t("admin.my_account") %>
-              <% end %>
-              <button class="dropdown-item" type="button"><%= t("admin.log_out") %></button>
+            <div class="dropdown-menu dropdown-menu-left p-2" aria-labelledby="dropdownMenu2">
+              <%= button_to t("booking.log_out"), logout_path, method: :delete %>
             </div>
           </li>
         </ul>
@@ -44,6 +41,7 @@
   <div class="p-4">
     <section class="statistics mt-4">
       <%== pagy_bootstrap_nav @pagy %>
+      <%= link_to "Export to excel", admin_export_excel_index_path(format: :xlsx) %>
       <div class="box d-flex rounded-2 align-items-center mb-4 mt-4">
         <div class="content rounded-3 p-3">
           <ul class="order-list">
