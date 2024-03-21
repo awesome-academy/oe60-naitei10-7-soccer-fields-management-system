@@ -35,8 +35,4 @@ vi:
       fail: "Hủy đặt chỗ thất bại"
 
     booking:
-      not_found: "Không tìm thấy đặt chỗ"
-
-    field_type:
-      create_success: "Tạo loại sân thành công"
-      create_fail: "Tạo loại sân thất bại"
+      not_found: "Không tìm thấy đơn đặt này"
