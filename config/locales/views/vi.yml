@@ -56,10 +56,13 @@ vi:
     title_address: "Địa chỉ"
     title_actions: "Hành động"
     delete: "Xóa"
-    add_field: "Thêm sân"
+    add_field: "Thêm sân bóng"
     close: "Đóng"
     field:
       create: "Tạo mới"
+      morning_price: "Giá buổi sáng"
+      afternoon_price: "Giá buổi chiều"
+      evening_price: "Giá buổi tối"
     static_pages:
       accept: "Xác nhận"
       reject: "Từ chối"
@@ -73,6 +76,8 @@ vi:
     close: "Đóng"
     my_account: "Tài khoản của tôi"
     log_out: "Đăng xuất"
+    title_name_type: "Tên sân"
+    view_detail: "Xem chi tiết"
 
     static_pages:
       accept: "Xác nhận"

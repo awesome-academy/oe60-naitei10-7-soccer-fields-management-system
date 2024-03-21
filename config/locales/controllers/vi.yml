@@ -2,37 +2,41 @@ vi:
   application:
     user:
       not_login: "Người dùng cần đăng nhập"
-      is_not_admin: "Bạn không phải là admin"
+      is_not_admin: "Bạn không phải là quản trị viên"
 
-  filed_type:
-    overlap: "Không thể đặt sân bóng trong khoảng thời gian này, vui lòng chọn thời gian khác."
+  field_type:
+    overlap: "Không thể đặt sân vào khung giờ này, vui lòng chọn thời gian khác."
 
   controller:
     static_pages:
       not_found_field: "Không tìm thấy kết quả phù hợp"
-      
+
   booking:
-    confirmed: "Đặt sân đã được xác nhận, bạn không thể hủy"
-    canceled: "Đặt sân bị hủy"
-    not_your: "Sân này không phải của bạn, vui lòng hủy đúng sân"
+    confirmed: "Đặt sân đã được xác nhận, bạn không thể hủy bỏ"
+    canceled: "Đặt sân đã bị hủy"
+    not_your: "Sân này không thuộc về bạn, vui lòng hủy đặt sân đúng"
 
   admin:
     field:
-      create_success: "Tạo mới sân bóng thành công"
-      create_fail: "Tạo mới sân bóng thất bại"
-      delete_success: "Xóa sân bóng thành công"
-      delete_fail: "Xóa sân bóng thất bại"
-      field_not_found: "Không tìm thấy sân bóng"
-      invalid: "Admin không tồn tại"
-      can_destroy: "Sân này đã có người đặt, bạn không thể xóa"
+      create_success: "Tạo sân thành công"
+      create_fail: "Tạo sân thất bại"
+      delete_success: "Xóa sân thành công"
+      delete_fail: "Xóa sân thất bại"
+      field_not_found: "Không tìm thấy sân"
+      invalid: "Quản trị viên không hợp lệ"
+      can_destroy: "Sân đã có đặt chỗ, bạn không thể xóa"
 
     bookings:
-      success: "Thay đổi trạng thái đơn đặt sân thành công"
-      fail: "Thay đổi trạng thái đơn đặt sân thất bại"
+      success: "Thay đổi trạng thái đặt chỗ thành công"
+      fail: "Thay đổi trạng thái đặt chỗ thất bại"
 
     cancel:
-        success: "Hủy đơn đặt sân thành công"
-        fail: "Hủy đơn đặt sân thất bại"
+      success: "Hủy đặt chỗ thành công"
+      fail: "Hủy đặt chỗ thất bại"
 
     booking:
-      not_found: "Không tìm thấy đơn đặt này"
+      not_found: "Không tìm thấy đặt chỗ"
+
+    field_type:
+      create_success: "Tạo loại sân thành công"
+      create_fail: "Tạo loại sân thất bại"

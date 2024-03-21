@@ -23,16 +23,20 @@ en:
       delete_success: "Field deletion successful"
       delete_fail: "Field deletion failed"
       field_not_found: "Field not found"
-      invalid: "Admin does not exist"
-      can_destroy: "This field already has bookings, you cannot delete it"
+      invalid: "Invalid admin"
+      can_destroy: "Field have booking, you can't destroy"
 
     bookings:
-      success: "Successfully changed booking status"
-      fail: "Failed to change booking status"
+      success: "Change status booking success"
+      fail: "Change status booking fail"
 
     cancel:
-      success: "Booking cancellation successful"
-      fail: "Booking cancellation failed"
+      success: "Cancel booking success"
+      fail: "Cancel booking fail"
 
     booking:
-      not_found: "Booking not found"
+      not_found: "Not found booking"
+
+    field_type:
+      create_success: "Field type created successfully"
+      create_fail: "Failed type to create field"
