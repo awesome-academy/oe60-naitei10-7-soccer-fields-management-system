@@ -15,5 +15,8 @@
     <%= form.label :address %>
     <%= form.text_field :address, class: "form-control" %>
   </div>
+  <span class="image">
+    <%= form.file_field :image %>
+  </span>
   <%= form.submit t("admin.field.create"), class: "btn btn-primary" %>
 <% end %>

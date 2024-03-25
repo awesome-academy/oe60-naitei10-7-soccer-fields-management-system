@@ -13,6 +13,7 @@ module Admin
 
     def create
       @field = current_user.fields.build field_params
+      @field.image.attach(field_params[:image])
       if @field.save
         flash[:success] = t("admin.field.create_success")
         redirect_to admin_fields_path
@@ -49,7 +50,7 @@ module Admin
     end
 
     def field_params
-      params.permit(:name, :description, :phone_number, :address)
+      params.permit(:name, :description, :phone_number, :address, :image)
     end
 
     def is_booking

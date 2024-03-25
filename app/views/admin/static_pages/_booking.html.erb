@@ -1,0 +1,10 @@
+<% @bookings.each do |booking| %>
+  <li class="order-item">
+    <span class="order-name"><%= "Booking Name: #{booking.user.full_name}" %></span>
+    <span class="order-day"><%= "Booking Day: #{booking.booked_date}" %></span>
+    <span class="order-time"><%= "Start time: #{booking.start_time}, End time: #{booking.end_time}" %></span>
+    <span class="order-field_type_name"><%= "Field name #{booking.field_type.field_type_name}" %></span>
+    <%= button_to t("admin.static_pages.accept"), admin_static_page_path(booking), method: :patch, class: "btn-confirm" %>
+    <%= button_to t("admin.static_pages.reject"), cancel_admin_static_page_path(booking), method: :patch, class: "btn-confirm" %>
+  </li>
+<% end %>

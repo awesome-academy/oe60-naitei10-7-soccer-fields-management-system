@@ -6,3 +6,5 @@ en:
   model:
     user:
       update_success: "Update success"
+    field:
+      image_invalid: "must be a valid image format"

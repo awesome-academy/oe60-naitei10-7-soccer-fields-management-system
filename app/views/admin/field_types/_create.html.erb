@@ -18,6 +18,9 @@
               <%= form.text_field "#{period.downcase}_price", class: "form-control" %>
             </div>
           <% end %>
+          <span class="image">
+            <%= form.file_field :image %>
+          </span>
           <%= form.submit t("admin.field.create"), class: "btn btn-primary" %>
         <% end %>
       </div>

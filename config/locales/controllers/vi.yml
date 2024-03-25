@@ -16,6 +16,15 @@ vi:
     canceled: "Đặt sân đã bị hủy"
     not_your: "Sân này không thuộc về bạn, vui lòng hủy đặt sân đúng"
 
+  controller:
+    static_pages:
+      not_found_field: "Không tìm thấy kết quả phù hợp"
+
+  booking:
+    confirmed: "Đặt sân đã được xác nhận, bạn không thể hủy bỏ"
+    canceled: "Đặt sân đã bị hủy bỏ"
+    not_your: "Sân này không thuộc về bạn, vui lòng hủy đặt sân đúng"
+
   admin:
     field:
       create_success: "Tạo sân thành công"
@@ -39,4 +48,4 @@ vi:
 
     field_type:
       create_success: "Tạo loại sân thành công"
-      create_fail: "Tạo loại sân thất bại"
+      create_fail: "Tạo loại sân không thành công"

@@ -25,6 +25,7 @@ en:
       field_not_found: "Field not found"
       invalid: "Invalid admin"
       can_destroy: "Field have booking, you can't destroy"
+      field_type_not_found: "Field type not found"
 
     bookings:
       success: "Change status booking success"
