@@ -43,6 +43,9 @@ Rails.application.routes.draw do
   # Favorite path
   resources :favorite_field_types, only: :create
 
-  # Review path
-  resources :reviews, only: %i(create update)
+  # Review field type path
+  resources :reviews, only: %i(update create)
+
+  # Comments path
+  resources :comments, only: :create
 end
