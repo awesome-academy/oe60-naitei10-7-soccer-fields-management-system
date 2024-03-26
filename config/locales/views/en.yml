@@ -110,3 +110,7 @@ en:
     name: "Name"
     review_success: "Review success"
     review_fail: "Review fail"
+
+  comment:
+    comment_success: "Comment has been created"
+    comment_fail: "Comment fail"

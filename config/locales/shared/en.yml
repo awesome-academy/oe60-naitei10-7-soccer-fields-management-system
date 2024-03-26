@@ -18,6 +18,7 @@ en:
     confirm: "Confirm"
     delete: "Delete"
     reviews: "Reviews"
+    comment: "Comment"
 
   model:
     user:

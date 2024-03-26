@@ -17,7 +17,19 @@
 </div>
 <div class="col">
   <div class="collapse multi-collapse" id="multiCollapseExample<%= review.id %>">
-    <div class="card card-body">
+    <div id="comment-<%= review.id %>">
+      <%= render review.comments %>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <%= form_for review, url: comments_path, method: :post do %>
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea name="content" class="form-control text-white" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <input id="selected" name="review_id" type="hidden" value="<%= review.id %>"/>
+          <input id="selected" name="dom_id" type="hidden" value="comment-<%= review.id %>"/>
+          <button type="submit" class="btn btn-success mt-2 float-right"><%= t("button.comment") %></button>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

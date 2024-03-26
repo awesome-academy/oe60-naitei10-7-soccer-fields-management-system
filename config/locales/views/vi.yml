@@ -110,3 +110,7 @@ vi:
     name: "Tên"
     review_success: "Đánh giá thành công"
     review_fail: "Đánh giá không thành công"
+
+  comment:
+    comment_success: "Đã bình luận"
+    comment_fail: "Bình luận thất bại"
