@@ -5,11 +5,11 @@ module TimeHelper
   def map_with_time_of_day(array)
     current_hour = Time.now.hour
     period = if current_hour >= 5 && current_hour < 12
-               "M"
+               "Morning"
              elsif current_hour >= 12 && current_hour < 18
-               "A"
+               "Afternoon"
              else
-               "E"
+               "Evening"
              end
 
     array.find { |obj| obj[:name] == period }

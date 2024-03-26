@@ -1,0 +1,23 @@
+<div class="text-white px-4 p-2 border my-2 rounded border-danger" data-toggle="collapse" data-target="#multiCollapseExample<%= review.id %>">
+  <div class="row align-items-center justify-content-between px-4">
+    <div class="row ">
+      <div><%= t("review.name") %>:</div>
+      <div class=""><%= review.user.first_name %></div>
+    </div>
+    <ul class="ratingW2 float-right row">
+      <% review.rating.times do |i| %>
+        <li>
+          <div class="star">
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <h5 class=""><%= review.content %></h5>
+</div>
+<div class="col">
+  <div class="collapse multi-collapse" id="multiCollapseExample<%= review.id %>">
+    <div class="card card-body">
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ class Booking < ApplicationRecord
   }, _default: :pending
 
   attribute :booked_date, :date, default: -> { Date.current }
+  attribute :rating, :integer, default: 5
 
   belongs_to :user
   belongs_to :field_type
