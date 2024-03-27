@@ -21,7 +21,7 @@ class User < ApplicationRecord
   validates :phone_number, presence: true
   validates :password, presence: true
   validates_confirmation_of :password_digest
-  validate :password_requirements_are_met
+  validate :password_requirements_are_met, if: :password
 
   attr_accessor :activation_token
 
