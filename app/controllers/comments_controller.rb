@@ -21,6 +21,6 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.permit :review_id, :content
+    params.permit :review_id, :content, :parent_comment_id
   end
 end
