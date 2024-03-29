@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 FactoryBot.define do
   factory :user do
-    email { "test@example.com" }
+    email { "nguyenthanhtung111xx@gmail.com" }
     first_name { "John" }
     last_name { "Doe" }
     phone_number { "123456789" }
