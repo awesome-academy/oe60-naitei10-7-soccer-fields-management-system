@@ -36,6 +36,9 @@ gem "pagy"
 
 gem "rufus-scheduler"
 
+gem "simplecov", require: false, group: :test
+
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "byebug"
@@ -43,7 +46,6 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "rails-controller-testing"
   gem "database_cleaner"
-  gem "simplecov"
 end
 
 group :development do

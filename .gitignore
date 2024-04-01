@@ -47,3 +47,4 @@ config/application.yml
 /vendor
 /config/database.yml
 config/credentials.yml.enc
+/coverage/
